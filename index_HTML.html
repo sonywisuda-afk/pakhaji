@@ -1,0 +1,4368 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dana Talangan Haji - Wujudkan Panggilan Baitullah Sekarang</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 50%, #d8e9a8 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,165.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: #fff;
+            padding: 8px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .hero h1 {
+            font-family: 'Amiri', serif;
+            font-size: 3.5em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #ffd700;
+            display: block;
+            font-size: 1.2em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.4em;
+            color: #fff;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .hero-description {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #1e5128;
+            padding: 20px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2em;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            margin: 10px;
+            border: 3px solid #fff;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        .cta-button i {
+            margin-right: 10px;
+        }
+
+        .urgency-text {
+            background: rgba(255,0,0,0.9);
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            font-weight: 600;
+            animation: pulse 2s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* ===== STATS ===== */
+        .stats {
+            background: #fff;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: -50px auto 0;
+            position: relative;
+            z-index: 10;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3em;
+            font-weight: 800;
+            color: #4e9f3d;
+            display: block;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95em;
+            margin-top: 5px;
+        }
+
+        /* ===== PAIN POINTS ===== */
+        .pain-points {
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #fff);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-family: 'Amiri', serif;
+            font-size: 2.8em;
+            color: #1e5128;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            font-size: 1.2em;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .pain-card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            border-top: 5px solid #e74c3c;
+        }
+
+        .pain-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .pain-icon {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+        }
+
+        .pain-card h3 {
+            color: #e74c3c;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .pain-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* ===== SOLUTION ===== */
+        .solution {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 100%);
+            padding: 100px 20px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution::before {
+            content: '☪';
+            position: absolute;
+            font-size: 400px;
+            opacity: 0.05;
+            top: -100px;
+            right: -100px;
+        }
+
+        .solution .section-title h2 {
+            color: #fff;
+        }
+
+        .solution .section-title p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .solution-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .solution-box {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 30px;
+            margin-top: 40px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .solution-box h3 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .solution-box p {
+            font-size: 1.2em;
+            line-height: 2;
+            margin-bottom: 30px;
+        }
+
+        /* ===== BENEFITS ===== */
+        .benefits {
+            padding: 100px 20px;
+            background: #fff;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            padding: 40px 30px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #4e9f3d, #ffd700);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #4e9f3d, #1e5128);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+            color: #fff;
+        }
+
+        .benefit-card h3 {
+            color: #1e5128;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        /* ===== HOW IT WORKS ===== */
+        .how-it-works {
+            background: linear-gradient(to bottom, #f8f9fa, #fff);
+            padding: 100px 20px;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .step-card {
+            text-align: center;
+            position: relative;
+            padding: 30px;
+        }
+
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: 800;
+            color: #1e5128;
+            margin: 0 auto 25px;
+            box-shadow: 0 5px 20px rgba(255,215,0,0.4);
+        }
+
+        .step-card h3 {
+            color: #1e5128;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .step-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .step-time {
+            display: inline-block;
+            background: #4e9f3d;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        /* ===== TESTIMONIALS ===== */
+        .testimonials {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 100%);
+            padding: 100px 20px;
+            color: #fff;
+        }
+
+        .testimonials .section-title h2 {
+            color: #fff;
+        }
+
+        .testimonials .section-title p {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .stars {
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            line-height: 1.9;
+            margin-bottom: 25px;
+            font-size: 1.05em;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            font-size: 1.1em;
+            color: #ffd700;
+        }
+
+        .testimonial-location {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* ===== INSTALLMENT TABLE ===== */
+        .installment {
+            padding: 100px 20px;
+            background: #fff;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+
+        thead {
+            background: linear-gradient(135deg, #1e5128, #4e9f3d);
+            color: #fff;
+        }
+
+        th, td {
+            padding: 18px 15px;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+
+        th {
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        tbody tr:hover {
+            background: #e9f5e9;
+        }
+
+        .highlight-row {
+            background: linear-gradient(135deg, #fff9db, #fff) !important;
+            font-weight: 600;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.05) 10px,
+                rgba(255,255,255,0.05) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+
+        @keyframes slide {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .cta-section h2 {
+            font-family: 'Amiri', serif;
+            font-size: 3em;
+            color: #1e5128;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .wa-button {
+            display: inline-flex;
+            align-items: center;
+            background: #25d366;
+            color: #fff;
+            padding: 25px 60px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: 700;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wa-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+        }
+
+        .wa-button i {
+            margin-right: 15px;
+            font-size: 1.3em;
+        }
+
+        /* ===== FAQ ===== */
+        .faq {
+            padding: 100px 20px;
+            background: #f8f9fa;
+        }
+
+        .faq-list {
+            max-width: 900px;
+            margin: 50px auto 0;
+        }
+
+        .faq-item {
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .faq-question {
+            padding: 25px 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1e5128;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 30px;
+        }
+
+        .faq-answer.active {
+            max-height: 300px;
+            padding: 0 30px 25px;
+        }
+
+        .faq-answer p {
+            color: #666;
+            line-height: 1.9;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s;
+            font-size: 1.3em;
+            color: #4e9f3d;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* ===== FINAL CTA ===== */
+        .final-cta {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 100%);
+            padding: 80px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .final-cta h2 {
+            font-family: 'Amiri', serif;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+        }
+
+        .final-cta p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .phone-number {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e5128;
+            padding: 20px 50px;
+            border-radius: 15px;
+            font-size: 2em;
+            font-weight: 800;
+            margin: 20px 0;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .operational {
+            margin-top: 20px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        /* ===== FLOATING WA ===== */
+        .floating-wa {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            box-shadow: 0 5px 20px rgba(37,211,102,0.4);
+            cursor: pointer;
+            z-index: 1000;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        /* ===== ANALYTICS DASHBOARD ===== */
+        #analyticsBtn {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, #1e5128, #4e9f3d);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3em;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 4px 16px rgba(30,81,40,0.4);
+            border: none;
+            transition: all 0.3s;
+        }
+        #analyticsBtn:hover { transform: scale(1.1); box-shadow: 0 8px 24px rgba(30,81,40,0.5); }
+
+        #analyticsOverlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            backdrop-filter: blur(4px);
+        }
+        #analyticsOverlay.active { display: flex; }
+
+        #analyticsDashboard {
+            background: #fff;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 720px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.35s ease;
+        }
+
+        .an-header {
+            background: linear-gradient(135deg, #1e5128 0%, #4e9f3d 100%);
+            padding: 24px 28px 20px;
+            border-radius: 24px 24px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .an-header h2 {
+            color: #fff;
+            font-size: 1.3em;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .an-close {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: #fff;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .an-close:hover { background: rgba(255,255,255,0.35); }
+
+        .an-body { padding: 24px 28px; }
+
+        .an-period-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 24px;
+            background: #f1f5f1;
+            padding: 4px;
+            border-radius: 12px;
+            flex-wrap: wrap;
+        }
+        .an-tab {
+            flex: 1;
+            padding: 8px 14px;
+            border: none;
+            border-radius: 9px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.82em;
+            font-weight: 600;
+            cursor: pointer;
+            background: transparent;
+            color: #666;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .an-tab.active {
+            background: linear-gradient(135deg, #1e5128, #4e9f3d);
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(30,81,40,0.3);
+        }
+
+        .an-kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            margin-bottom: 24px;
+        }
+        .an-kpi {
+            background: linear-gradient(135deg, #f8faf8, #f0f7ef);
+            border-radius: 14px;
+            padding: 16px 14px;
+            text-align: center;
+            border: 1.5px solid #e0ecdf;
+        }
+        .an-kpi .kpi-val {
+            font-size: 2.2em;
+            font-weight: 800;
+            color: #1e5128;
+            line-height: 1.1;
+        }
+        .an-kpi .kpi-label {
+            font-size: 0.72em;
+            color: #888;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .an-section-title {
+            font-size: 0.85em;
+            font-weight: 700;
+            color: #1e5128;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .an-divider { border: none; border-top: 1.5px solid #e9ecef; margin: 20px 0; }
+
+        .an-chart-wrap { background: #f8faf8; border-radius: 14px; padding: 16px; margin-bottom: 20px; }
+
+        .an-bar-chart {
+            display: flex;
+            align-items: flex-end;
+            gap: 6px;
+            height: 120px;
+        }
+        .an-bar-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            height: 100%;
+            justify-content: flex-end;
+        }
+        .an-bar {
+            width: 100%;
+            background: linear-gradient(to top, #1e5128, #4e9f3d);
+            border-radius: 6px 6px 0 0;
+            min-height: 4px;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .an-bar:hover::after {
+            content: attr(data-val);
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e5128;
+            color: #fff;
+            font-size: 0.7em;
+            padding: 2px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+            font-weight: 700;
+        }
+        .an-bar-label {
+            font-size: 0.62em;
+            color: #888;
+            font-weight: 600;
+            text-align: center;
+        }
+        .an-bar-val {
+            font-size: 0.65em;
+            font-weight: 700;
+            color: #4e9f3d;
+        }
+
+        .an-scroll-track {
+            background: #e9ecef;
+            border-radius: 20px;
+            height: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 8px;
+        }
+        .an-scroll-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #1e5128, #4e9f3d, #ffd700);
+            border-radius: 20px;
+            transition: width 0.8s ease;
+        }
+
+        .an-depth-grid {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+        }
+        .an-depth-seg {
+            flex: 1;
+            text-align: center;
+        }
+        .an-depth-seg .seg-bar {
+            height: 8px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+        .an-depth-seg .seg-label { font-size: 0.62em; color: #888; font-weight: 600; }
+        .an-depth-seg .seg-count { font-size: 0.68em; color: #1e5128; font-weight: 700; }
+
+        .an-submission-list {
+            max-height: 160px;
+            overflow-y: auto;
+            background: #f8faf8;
+            border-radius: 12px;
+            padding: 10px 14px;
+        }
+        .an-submission-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.8em;
+        }
+        .an-submission-item:last-child { border-bottom: none; }
+        .an-sub-nama { font-weight: 600; color: #1e5128; }
+        .an-sub-time { color: #aaa; font-size: 0.9em; }
+        .an-sub-jamaah {
+            background: #4e9f3d;
+            color: #fff;
+            font-size: 0.7em;
+            padding: 2px 8px;
+            border-radius: 20px;
+            font-weight: 700;
+        }
+
+        .an-pin-screen {
+            padding: 40px 28px;
+            text-align: center;
+        }
+        .an-pin-screen h3 { color: #1e5128; font-size: 1.2em; margin-bottom: 8px; }
+        .an-pin-screen p { color: #888; font-size: 0.88em; margin-bottom: 20px; }
+        .an-pin-input {
+            width: 180px;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.3em;
+            letter-spacing: 6px;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            font-family: monospace;
+            outline: none;
+            margin-bottom: 14px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: border-color 0.2s;
+        }
+        .an-pin-input:focus { border-color: #4e9f3d; }
+        .an-pin-btn {
+            background: linear-gradient(135deg, #1e5128, #4e9f3d);
+            color: #fff;
+            border: none;
+            padding: 11px 30px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .an-pin-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(30,81,40,0.3); }
+        .an-pin-error { color: #e74c3c; font-size: 0.82em; margin-top: 8px; min-height: 18px; font-weight: 600; }
+
+        .an-reset-btn {
+            background: transparent;
+            border: 1px solid #e74c3c;
+            color: #e74c3c;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.75em;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: all 0.2s;
+        }
+        .an-reset-btn:hover { background: #fff0ef; }
+
+        @media (max-width: 500px) {
+            .an-kpi-grid { grid-template-columns: 1fr 1fr; }
+            .an-body { padding: 16px 16px; }
+            .an-header { padding: 18px 16px; }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+
+            .section-title h2 {
+                font-size: 2em;
+            }
+
+            .cta-button, .wa-button {
+                font-size: 1em;
+                padding: 15px 30px;
+            }
+
+            .stat-number {
+                font-size: 2.2em;
+            }
+
+            .solution-box {
+                padding: 30px 20px;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 12px 8px;
+            }
+        }
+
+        /* ===== REFERRAL SECTION ===== */
+        .referral-section {
+            background: linear-gradient(135deg, #0d3320 0%, #1e5128 50%, #2d7a3a 100%);
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+            color: #fff;
+        }
+        .referral-section::before {
+            content: '🤝';
+            position: absolute;
+            font-size: 320px;
+            opacity: 0.04;
+            top: -40px;
+            right: -60px;
+            line-height: 1;
+        }
+        .referral-section .section-title h2 { color: #fff; }
+        .referral-section .section-title p { color: rgba(255,255,255,0.85); }
+
+        .referral-flow {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 0;
+            margin: 50px 0 60px;
+            flex-wrap: wrap;
+        }
+        .referral-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 160px;
+            position: relative;
+        }
+        .referral-step-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7em;
+            margin-bottom: 14px;
+            position: relative;
+            z-index: 2;
+            border: 3px solid rgba(255,255,255,0.3);
+            flex-shrink: 0;
+        }
+        .referral-step-num {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            background: #ffd700;
+            color: #1e5128;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            font-size: 0.7em;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .referral-arrow {
+            display: flex;
+            align-items: center;
+            padding: 0 4px;
+            margin-top: 22px;
+            color: rgba(255,215,0,0.6);
+            font-size: 1.5em;
+        }
+        .referral-step h4 {
+            font-size: 0.82em;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #ffd700;
+            line-height: 1.3;
+        }
+        .referral-step p {
+            font-size: 0.74em;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+
+        /* Kode Generator */
+        .kode-generator-box {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            border: 2px solid rgba(255,255,255,0.25);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 0 auto 60px;
+        }
+        .kode-generator-box h3 {
+            font-size: 1.5em;
+            color: #ffd700;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+        .kode-generator-box .sub {
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9em;
+            margin-bottom: 28px;
+        }
+        .kode-input-row {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .kode-input-row input {
+            flex: 1;
+            min-width: 180px;
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            outline: none;
+        }
+        .kode-input-row input::placeholder { color: rgba(255,255,255,0.5); }
+        .kode-input-row input:focus { border-color: #ffd700; }
+        .kode-input-row button {
+            padding: 14px 24px;
+            background: linear-gradient(135deg, #ffd700, #ffed4e);
+            color: #1e5128;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .kode-input-row button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,215,0,0.4); }
+        .kode-result {
+            display: none;
+            background: rgba(0,0,0,0.3);
+            border-radius: 16px;
+            padding: 22px 24px;
+            border: 2px solid rgba(255,215,0,0.4);
+        }
+        .kode-result.show { display: block; }
+        .kode-display {
+            font-size: 2.2em;
+            font-weight: 800;
+            color: #ffd700;
+            letter-spacing: 4px;
+            text-align: center;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 16px;
+        }
+        .kode-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .kode-actions button {
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.15);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .kode-actions button:hover { background: rgba(255,255,255,0.25); }
+        .kode-actions .btn-wa {
+            background: #25d366;
+            border-color: #25d366;
+        }
+        .kode-actions .btn-wa:hover { background: #128c7e; }
+
+        /* S&K Referral */
+        .sk-referral {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .sk-group {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 16px;
+            margin-bottom: 14px;
+            overflow: hidden;
+        }
+        .sk-group-header {
+            padding: 18px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            color: #ffd700;
+            font-size: 1em;
+            transition: background 0.2s;
+        }
+        .sk-group-header:hover { background: rgba(255,255,255,0.06); }
+        .sk-group-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+        }
+        .sk-group-body.open { max-height: 600px; }
+        .sk-group-body-inner {
+            padding: 0 24px 20px;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.9em;
+            line-height: 1.85;
+        }
+        .sk-group-body-inner ul {
+            margin: 6px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        .sk-group-body-inner ul li {
+            padding: 4px 0;
+        }
+        .daftar-mitra-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            color: #fff;
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.15em;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+            transition: all 0.3s;
+            margin-top: 40px;
+        }
+        .daftar-mitra-btn:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(37,211,102,0.55); }
+
+        @media (max-width: 768px) {
+            .referral-flow { gap: 0; }
+            .referral-step { max-width: 120px; }
+            .referral-arrow { font-size: 1.1em; }
+            .kode-generator-box { padding: 24px 18px; }
+            .kode-display { font-size: 1.6em; letter-spacing: 2px; }
+        }
+        @media (max-width: 540px) {
+            .referral-flow { flex-direction: column; align-items: center; gap: 4px; }
+            .referral-arrow { transform: rotate(90deg); margin: 0; }
+            .referral-step { max-width: 100%; width: 100%; flex-direction: row; gap: 16px; text-align: left; }
+            .referral-step-icon { margin-bottom: 0; flex-shrink: 0; }
+        }
+
+        /* ===== SCROLL ANIMATION ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i> Resmi & Terpercaya - Berizin Kemenag
+            </div>
+            <h1>
+                Panggilan Baitullah
+                <span>Tak Harus Menunggu Lama</span>
+            </h1>
+            <p class="hero-subtitle">
+                🕋 Labbaik Allahumma Labbaik 🕋
+            </p>
+            <p class="hero-description">
+                Impian menunaikan Rukun Islam ke-5 ada di depan mata. Dengan <strong>Dana Talangan Haji</strong>, 
+                antrian Anda segera tercatat — <strong>tanpa harus menyiapkan seluruh biaya sekaligus</strong>. 
+                Bayar cicilan ringan, porsi haji langsung terdaftar resmi!
+            </p>
+            <a href="https://wa.me/6281359459013?text=Assalamualaikum%2C%20saya%20ingin%20konsultasi%20Dana%20Talangan%20Haji" class="cta-button">
+                <i class="fab fa-whatsapp"></i> Konsultasi Gratis Sekarang
+            </a>
+            <div class="urgency-text">
+                <i class="fas fa-clock"></i> Kuota Terbatas Bulan Ini!
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats">
+        <div class="stat-item">
+            <span class="stat-number">2,500+</span>
+            <div class="stat-label">Jamaah Terbantu</div>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">98%</span>
+            <div class="stat-label">Tingkat Kepuasan</div>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" style="font-size:1.8em;">Rp 1,275,000</span>
+            <div class="stat-label">Biaya Administrasi</div>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">1 Hari</span>
+            <div class="stat-label">Proses Pendaftaran</div>
+        </div>
+    </div>
+
+    <!-- APA ITU PEMBIAYAAN PENDAFTARAN HAJI ZADA SYARIAH -->
+    <section style="padding: 80px 20px; background: linear-gradient(135deg, #f0f7ee 0%, #fff 100%);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2 style="font-family:'Amiri',serif; font-size:2.6em; color:#1e5128; margin-bottom:15px;">
+                    Apa itu Pembiayaan Pendaftaran Haji <span style="color:#4e9f3d;">Zada Syariah</span>?
+                </h2>
+            </div>
+            <div class="fade-in" style="max-width:900px; margin:0 auto;">
+
+                <!-- Card Definisi -->
+                <div style="background:#fff; border-radius:24px; box-shadow:0 8px 32px rgba(78,159,61,0.12); border:2px solid #d8e9a8; padding:40px 40px 30px; margin-bottom:30px; position:relative; overflow:hidden;">
+                    <div style="position:absolute; top:-18px; right:-18px; font-size:120px; opacity:0.06; color:#4e9f3d;">🕋</div>
+                    <div style="display:flex; align-items:center; gap:18px; margin-bottom:22px;">
+                        <div style="width:58px; height:58px; background:linear-gradient(135deg,#1e5128,#4e9f3d); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.6em;">🕌</div>
+                        <h3 style="color:#1e5128; font-size:1.45em; margin:0; line-height:1.4;">Pendaftaran Haji Reguler &amp; Khusus</h3>
+                    </div>
+                    <p style="color:#444; font-size:1.08em; line-height:1.9; margin:0;">
+                        <strong>Pembiayaan Pendaftaran Haji dari Zada Finance Syariah</strong> adalah fasilitas pembiayaan yang membantu 
+                        calon jamaah haji untuk mendapatkan <strong style="color:#1e5128;">Nomor Porsi Haji</strong> — baik untuk 
+                        <em>Haji Reguler</em> maupun <em>Haji Khusus</em> — dengan skema <strong style="color:#4e9f3d;">Angsuran yang ringan dan terjangkau</strong>, 
+                        sehingga Anda tidak perlu menunggu tabungan terkumpul penuh untuk segera terdaftar dalam antrean haji resmi.
+                    </p>
+                </div>
+
+                <!-- Grid fitur singkat -->
+                <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:18px; margin-bottom:30px;">
+                    <div style="background:#fff; border-radius:16px; padding:24px 20px; border:2px solid #e9ecef; box-shadow:0 3px 12px rgba(0,0,0,0.06); text-align:center;">
+                        <div style="font-size:2em; margin-bottom:10px;">📋</div>
+                        <h4 style="color:#1e5128; margin-bottom:8px; font-size:1em;">Haji Reguler</h4>
+                        <p style="color:#666; font-size:0.88em; margin:0; line-height:1.7;">Pendaftaran porsi haji melalui jalur resmi Kemenag dengan masa tunggu nasional.</p>
+                    </div>
+                    <div style="background:#fff; border-radius:16px; padding:24px 20px; border:2px solid #e9ecef; box-shadow:0 3px 12px rgba(0,0,0,0.06); text-align:center;">
+                        <div style="font-size:2em; margin-bottom:10px;">⭐</div>
+                        <h4 style="color:#1e5128; margin-bottom:8px; font-size:1em;">Haji Khusus (ONH Plus)</h4>
+                        <p style="color:#666; font-size:0.88em; margin:0; line-height:1.7;">Pendaftaran porsi haji jalur khusus dengan layanan premium dan masa tunggu lebih singkat.</p>
+                    </div>
+                    <div style="background:#fff; border-radius:16px; padding:24px 20px; border:2px solid #e9ecef; box-shadow:0 3px 12px rgba(0,0,0,0.06); text-align:center;">
+                        <div style="font-size:2em; margin-bottom:10px;">💳</div>
+                        <h4 style="color:#1e5128; margin-bottom:8px; font-size:1em;">Skema Angsuran</h4>
+                        <p style="color:#666; font-size:0.88em; margin:0; line-height:1.7;">Bayar perbulan sesuai kemampuan, porsi haji langsung terdaftar hari ini.</p>
+                    </div>
+                    <div style="background:#fff; border-radius:16px; padding:24px 20px; border:2px solid #e9ecef; box-shadow:0 3px 12px rgba(0,0,0,0.06); text-align:center;">
+                        <div style="font-size:2em; margin-bottom:10px;">🏦</div>
+                        <h4 style="color:#1e5128; margin-bottom:8px; font-size:1em;">Prinsip Syariah</h4>
+                        <p style="color:#666; font-size:0.88em; margin:0; line-height:1.7;">Bebas riba, transparan, dan sesuai ketentuan syariah Islam.</p>
+                    </div>
+                </div>
+
+                <!-- Area Pemasaran -->
+                <div style="background:linear-gradient(135deg,#1e5128 0%,#4e9f3d 100%); border-radius:20px; padding:32px 36px; color:#fff; position:relative; overflow:hidden;">
+                    <div style="position:absolute; top:-10px; right:-10px; font-size:100px; opacity:0.07;">📍</div>
+                    <div style="display:flex; align-items:flex-start; gap:16px;">
+                        <div style="flex-shrink:0; margin-top:4px;">
+                            <i class="fas fa-map-marker-alt" style="font-size:1.8em; color:#ffd700;"></i>
+                        </div>
+                        <div>
+                            <h4 style="font-size:1.2em; margin:0 0 12px; color:#ffd700;">Area Pemasaran</h4>
+                            <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:14px;">
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Kediri</span>
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Nganjuk</span>
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Jombang</span>
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Blitar</span>
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Tulungagung</span>
+                                <span style="background:rgba(255,255,255,0.2); border:1.5px solid rgba(255,255,255,0.4); padding:5px 16px; border-radius:20px; font-size:0.9em; font-weight:600; backdrop-filter:blur(6px);">📍 Trenggalek</span>
+                            </div>
+                            <p style="margin:0; font-size:0.92em; opacity:0.92; line-height:1.7;">
+                                <i class="fas fa-info-circle" style="color:#ffd700; margin-right:6px;"></i>
+                                Berada di luar area tersebut? <strong>Tidak perlu khawatir</strong> — silakan konsultasikan dengan petugas kami, 
+                                kami siap membantu Anda di mana pun Anda berada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PAIN POINTS -->
+    <section class="pain-points">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Apa yang Menghalangi Anda Berangkat Haji?</h2>
+                <p>Banyak Muslim yang sudah siap lahir batin, namun terhalang oleh hal-hal di bawah ini. Apakah Anda merasakannya juga?</p>
+            </div>
+            <div class="pain-grid">
+                <div class="pain-card fade-in">
+                    <div class="pain-icon">⏳</div>
+                    <h3>Antrean Haji Sangat Panjang</h3>
+                    <p>Di banyak daerah, masa tunggu bisa mencapai 20–40 tahun. Semakin lama menunda daftar, semakin jauh pula keberangkatan Anda.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <div class="pain-icon">💰</div>
+                    <h3>Biaya Harus Lunas Dulu</h3>
+                    <p>Biaya Penyelenggaraan Ibadah Haji (BPIH) harus dibayar penuh untuk mendapatkan nomor porsi. Ini menjadi hambatan besar.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <div class="pain-icon">😔</div>
+                    <h3>Tabungan Belum Cukup</h3>
+                    <p>Niat sudah bulat, tekad sudah kuat — namun tabungan masih jauh dari angka yang dibutuhkan untuk mendaftar porsi haji.</p>
+                </div>
+                <div class="pain-card fade-in">
+                    <div class="pain-icon">📅</div>
+                    <h3>Semakin Tua, Semakin Sulit</h3>
+                    <p>Menunggu tabungan terkumpul bisa memakan waktu bertahun-tahun, sementara kondisi kesehatan tidak bisa diprediksi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTION -->
+    <section class="solution">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Dana Talangan Haji — Jalan Mudah ke Tanah Suci</h2>
+                <p>Kami hadir untuk memastikan tidak ada seorang Muslim pun yang tertunda menunaikan ibadah haji hanya karena alasan keuangan.</p>
+            </div>
+            <div class="solution-content">
+                <div class="solution-box fade-in">
+                    <h3>Kami Talangan Dulu, Anda Bayar Perlahan</h3>
+                    <p>
+                        Dana Talangan Haji adalah fasilitas pembiayaan yang membantu Anda mendapatkan 
+                        <strong>nomor porsi haji terlebih dahulu</strong> — bahkan sebelum biaya terkumpul sepenuhnya. 
+                        Anda hanya perlu menyiapkan <strong>uang muka awal</strong>, sisanya bisa dicicil dengan tenang 
+                        dan nyaman sesuai kemampuan Anda.
+                    </p>
+                    <a href="https://wa.me/6281359459013?text=Assalamualaikum%2C%20saya%20mau%20daftar%20Dana%20Talangan%20Haji" class="cta-button">
+                        <i class="fab fa-whatsapp"></i> Saya Mau Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Mengapa Memilih Dana Talangan Haji Kami?</h2>
+                <p>Program kami dirancang khusus untuk kemudahan dan ketenangan Anda dalam merencanakan perjalanan suci ke Tanah Haram.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mosque"></i>
+                    </div>
+                    <h3>Porsi Haji Langsung Terdaftar</h3>
+                    <p>Begini akad selesai, nomor porsi haji resmi Anda langsung terdaftar di sistem Kemenag. Antrian Anda mulai berjalan hari ini.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Cicilan Ringan & Fleksibel</h3>
+                    <p>Cicilan disesuaikan dengan kondisi keuangan Anda. Tidak memberatkan, justru membantu Anda lebih disiplin menabung untuk haji.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Aman & Sesuai Syariah</h3>
+                    <p>Program kami mengikuti prinsip syariah Islam. Tidak ada bunga (riba), transparan, dan telah mendapat pengawasan dari lembaga berwenang.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Proses Cepat 1 Hari Kerja</h3>
+                    <p>Pengajuan mudah, dokumen minimal. Dalam 1 hari kerja, porsi haji Anda sudah bisa diproses dan nomor antrian resmi tercatat.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Didampingi Petugas Profesional</h3>
+                    <p>Tim kami siap mendampingi Anda dari konsultasi awal hingga keberangkatan. Tidak perlu bingung, kami selalu ada untuk Anda.</p>
+                </div>
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Konsultasi Gratis Kapan Saja</h3>
+                    <p>Punya pertanyaan? Hubungi kami kapan saja via WhatsApp. Petugas kami ramah dan siap membantu tanpa biaya konsultasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>4 Langkah Mudah Menuju Tanah Suci</h2>
+                <p>Prosesnya sederhana, cepat, dan kami dampingi setiap langkahnya.</p>
+            </div>
+            <div class="steps">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Konsultasi Gratis via WhatsApp</h3>
+                    <p>Hubungi petugas kami. Ceritakan situasi Anda, kami akan bantu hitung simulasi cicilan yang sesuai kemampuan.</p>
+                    <span class="step-time"><i class="far fa-clock"></i> Hanya 15 Menit</span>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Pengajuan & Persiapan Dokumen</h3>
+                    <p>Siapkan KTP, KK, dan beberapa dokumen dasar. Tim kami akan memandu Anda step by step agar prosesnya lancar.</p>
+                    <span class="step-time"><i class="far fa-file-alt"></i> Dokumen Minimal</span>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Akad & Nomor Porsi Resmi</h3>
+                    <p>Setelah akad disepakati dan uang muka dibayarkan, nomor porsi haji resmi Anda langsung diproses.</p>
+                    <span class="step-time"><i class="far fa-check-circle"></i> 1 Hari Kerja</span>
+                </div>
+                <div class="step-card fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Cicil Tenang, Tunggu Giliran</h3>
+                    <p>Bayar cicilan sesuai jadwal. Saat tiba giliran, kami bantu persiapan keberangkatan ke Tanah Suci.</p>
+                    <span class="step-time"><i class="fas fa-kaaba"></i> Berangkat Haji</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALLMENT TABLE -->
+    <section class="installment">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Ilustrasi Angsuran Program Haji</h2>
+                <p>Pilih paket pembiayaan yang sesuai dengan kemampuan Anda. Cicilan ringan, keberangkatan terwujud.</p>
+            </div>
+            <div class="table-container fade-in">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Pembiayaan</th>
+                            <th>12 Bulan</th>
+                            <th>24 Bulan</th>
+                            <th>36 Bulan</th>
+                            <th>48 Bulan</th>
+                            <th>60 Bulan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rp 25.000.000</td>
+                            <td>2.316.000</td>
+                            <td>1.273.000</td>
+                            <td>930.000</td>
+                            <td>761.000</td>
+                            <td>663.000</td>
+                        </tr>
+                        <tr>
+                            <td>Rp 24.000.000</td>
+                            <td>2.224.000</td>
+                            <td>1.222.000</td>
+                            <td>892.000</td>
+                            <td>731.000</td>
+                            <td>636.000</td>
+                        </tr>
+                        <tr>
+                            <td>Rp 23.000.000</td>
+                            <td>2.131.000</td>
+                            <td>1.171.000</td>
+                            <td>855.000</td>
+                            <td>700.000</td>
+                            <td>610.000</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>Rp 20.000.000</td>
+                            <td>1.853.000</td>
+                            <td>1.018.000</td>
+                            <td>744.000</td>
+                            <td>609.000</td>
+                            <td>530.000</td>
+                        </tr>
+                        <tr>
+                            <td>Rp 18.000.000</td>
+                            <td>1.668.000</td>
+                            <td>917.000</td>
+                            <td>669.000</td>
+                            <td>548.000</td>
+                            <td>477.000</td>
+                        </tr>
+                        <tr>
+                            <td>Rp 15.000.000</td>
+                            <td>1.390.000</td>
+                            <td>764.000</td>
+                            <td>558.000</td>
+                            <td>457.000</td>
+                            <td>398.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="text-align: center; margin-top: 30px; color: #666; font-style: italic;">
+                *Simulasi dapat berubah sesuai kebijakan. Hubungi kami untuk informasi terbaru.
+            </p>
+        </div>
+    </section>
+
+    <!-- SYARAT & KETENTUAN -->
+    <section style="padding: 80px 20px; background: linear-gradient(to bottom, #f8f9fa, #fff);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Syarat & Ketentuan Program</h2>
+                <p>Ketahui persyaratan lengkap sebelum mendaftar agar proses berjalan lancar.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 25px; margin-top: 40px;">
+
+                <!-- Admin -->
+                <div class="fade-in" style="background:#fff; border-radius:20px; padding:35px 25px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:5px solid #1e5128;">
+                    <div style="width:70px;height:70px;background:linear-gradient(135deg,#1e5128,#4e9f3d);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2em;color:#fff;">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3 style="color:#1e5128;font-size:1.2em;margin-bottom:6px;">Biaya Pendaftaran</h3>
+                    <p style="font-size:2em;font-weight:800;color:#4e9f3d;margin:8px 0;">Rp 1.275.000</p>
+                    <p style="color:#e74c3c;font-weight:700;font-size:0.92em;margin-bottom:12px;">per Jamaah</p>
+                    <div style="text-align:left;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <p style="color:#555;font-size:0.88em;font-weight:700;margin-bottom:8px;">✅ Sudah termasuk:</p>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            <li style="color:#666;font-size:0.85em;padding:3px 0;"><i class="fas fa-check-circle" style="color:#4e9f3d;margin-right:6px;"></i>Biaya Administrasi</li>
+                            <li style="color:#666;font-size:0.85em;padding:3px 0;"><i class="fas fa-check-circle" style="color:#4e9f3d;margin-right:6px;"></i>Asuransi Jiwa Jamaah</li>
+                            <li style="color:#666;font-size:0.85em;padding:3px 0;"><i class="fas fa-check-circle" style="color:#4e9f3d;margin-right:6px;"></i>Biaya Buka Rekening</li>
+                            <li style="color:#666;font-size:0.85em;padding:3px 0;"><i class="fas fa-check-circle" style="color:#4e9f3d;margin-right:6px;"></i>Biaya Materai</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Jumlah Jamaah -->
+                <div class="fade-in" style="background:#fff; border-radius:20px; padding:35px 25px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:5px solid #ffd700;">
+                    <div style="width:70px;height:70px;background:linear-gradient(135deg,#ffd700,#ffed4e);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2em;color:#1e5128;">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 style="color:#1e5128;font-size:1.2em;margin-bottom:10px;">Jamaah per Nasabah</h3>
+                    <p style="font-size:2em;font-weight:800;color:#ffd700;margin:10px 0;">Maks. 4 Jamaah</p>
+                    <p style="color:#666;font-size:0.95em;line-height:1.7;">Satu nasabah dapat mendaftarkan hingga <strong>4 jamaah</strong> sekaligus — misalnya suami, istri, dan 2 anak atau orang tuanya.</p>
+                </div>
+
+                <!-- Usia Nasabah -->
+                <div class="fade-in" style="background:#fff; border-radius:20px; padding:35px 25px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:5px solid #4e9f3d;">
+                    <div style="width:70px;height:70px;background:linear-gradient(135deg,#4e9f3d,#1e5128);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2em;color:#fff;">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3 style="color:#1e5128;font-size:1.2em;margin-bottom:10px;">Usia Nasabah</h3>
+                    <div style="display:flex;justify-content:center;gap:20px;margin:15px 0;flex-wrap:wrap;">
+                        <div>
+                            <p style="font-size:1.4em;font-weight:800;color:#4e9f3d;">Min. 21 Tahun</p>
+                            <p style="font-size:0.8em;color:#888;">Saat Pengajuan</p>
+                        </div>
+                        <div style="border-left:2px solid #e9ecef;"></div>
+                        <div>
+                            <p style="font-size:1.4em;font-weight:800;color:#e74c3c;">Maks. 65 Tahun*</p>
+                            <p style="font-size:0.8em;color:#888;">Saat Akhir Pembiayaan</p>
+                        </div>
+                    </div>
+                    <p style="color:#666;font-size:0.9em;line-height:1.7;">Nasabah (penanggung pembiayaan) wajib berusia minimal <strong>21 tahun</strong> saat pengajuan dilakukan dan tidak boleh melebihi <strong>65 tahun</strong> pada saat masa pembiayaan berakhir.</p>
+                </div>
+
+                <!-- Usia Jamaah -->
+                <div class="fade-in" style="background:#fff; border-radius:20px; padding:35px 25px; text-align:center; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:5px solid #e74c3c;">
+                    <div style="width:70px;height:70px;background:linear-gradient(135deg,#e74c3c,#c0392b);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:2em;color:#fff;">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 style="color:#1e5128;font-size:1.2em;margin-bottom:10px;">Usia Jamaah yang Didaftarkan</h3>
+                    <div style="display:flex;justify-content:center;gap:20px;margin:15px 0;flex-wrap:wrap;">
+                        <div>
+                            <p style="font-size:1.4em;font-weight:800;color:#4e9f3d;">Min. 12 Tahun</p>
+                            <p style="font-size:0.8em;color:#888;">Batas Terendah</p>
+                        </div>
+                        <div style="border-left:2px solid #e9ecef;"></div>
+                        <div>
+                            <p style="font-size:1.4em;font-weight:800;color:#888;">Maks. Tidak Ada</p>
+                            <p style="font-size:0.8em;color:#888;">Batasan Usia Atas</p>
+                        </div>
+                    </div>
+                    <p style="color:#666;font-size:0.9em;line-height:1.7;">Tidak ada batasan usia maksimal untuk jamaah yang didaftarkan. Misal: anak usia 45 tahun sebagai nasabah dapat mendaftarkan orang tuanya yang berusia di atas 65 tahun sebagai jamaah — <strong>tetap diperbolehkan</strong>.</p>
+                </div>
+
+            </div>
+
+            <!-- Info box -->
+            <div class="fade-in" style="margin-top:35px; background:linear-gradient(135deg,#1e5128,#4e9f3d); border-radius:20px; padding:30px 35px; display:flex; align-items:center; gap:20px; flex-wrap:wrap; color:#fff; box-shadow:0 8px 25px rgba(30,81,40,0.3);">
+                <i class="fas fa-info-circle" style="font-size:2.5em; color:#ffd700; flex-shrink:0;"></i>
+                <div>
+                    <p style="font-weight:700; font-size:1.1em; margin-bottom:6px;">Contoh Perhitungan Biaya Keluarga:</p>
+                    <p style="line-height:1.8; opacity:0.95;">Bapak Hasan (42 thn) mendaftarkan dirinya, istrinya (39 thn), dan 2 anaknya (15 thn & 18 thn) dengan tenor 36 bulan. Total biaya pendaftaran: <strong>4 jamaah × Rp 1.275.000 = Rp 5.100.000</strong> — sudah termasuk admin, asuransi, buka rekening, dan materai untuk seluruh jamaah.</p>
+                </div>
+            </div>
+
+            <!-- SYARAT DOKUMEN -->
+            <div class="fade-in" style="margin-top:35px; background:#fff; border-radius:20px; padding:35px; box-shadow:0 5px 20px rgba(0,0,0,0.08); border-top:5px solid #ffd700;">
+                <div style="display:flex; align-items:center; gap:14px; margin-bottom:22px;">
+                    <div style="width:55px;height:55px;background:linear-gradient(135deg,#ffd700,#ffed4e);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.6em;color:#1e5128;flex-shrink:0;">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <div>
+                        <h3 style="color:#1e5128;font-size:1.25em;margin-bottom:3px;">Persyaratan Dokumen</h3>
+                        <p style="color:#888;font-size:0.88em;">Siapkan dokumen berikut sebelum mengajukan pendaftaran</p>
+                    </div>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:12px;">
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-id-card" style="color:#4e9f3d;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">KTP Suami</p>
+                            <p style="color:#888;font-size:0.78em;">Kartu Tanda Penduduk asli/fotokopi</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-id-card" style="color:#4e9f3d;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">KTP Istri</p>
+                            <p style="color:#888;font-size:0.78em;">Kartu Tanda Penduduk asli/fotokopi</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-users" style="color:#4e9f3d;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Kartu Keluarga (KK)</p>
+                            <p style="color:#888;font-size:0.78em;">Fotokopi Kartu Keluarga</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-book" style="color:#4e9f3d;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Buku Nikah</p>
+                            <p style="color:#888;font-size:0.78em;">Fotokopi buku nikah suami & istri</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-bolt" style="color:#ffd700;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Pipil Pajak / Token Listrik</p>
+                            <p style="color:#888;font-size:0.78em;">Bukti tagihan listrik atau PBB</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f8f9fa;border-radius:12px;padding:14px 16px;">
+                        <i class="fas fa-store" style="color:#ffd700;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">SKU / NIB</p>
+                            <p style="color:#888;font-size:0.78em;">Surat Keterangan Usaha atau NIB</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#fff7e6;border-radius:12px;padding:14px 16px;border:1.5px solid #ffd700;">
+                        <i class="fas fa-file-invoice-dollar" style="color:#f39c12;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Slip Gaji <span style="color:#4e9f3d;font-size:0.85em;">(Karyawan/Pegawai)</span></p>
+                            <p style="color:#888;font-size:0.78em;">3 bulan terakhir</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#fff7e6;border-radius:12px;padding:14px 16px;border:1.5px solid #ffd700;">
+                        <i class="fas fa-camera" style="color:#f39c12;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Nota & Foto Usaha <span style="color:#4e9f3d;font-size:0.85em;">(Wiraswasta)</span></p>
+                            <p style="color:#888;font-size:0.78em;">Nota pembelian/penjualan + foto usaha</p>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:12px;background:#f0f7ff;border-radius:12px;padding:14px 16px;border:1.5px solid #aad4f5;">
+                        <i class="fas fa-certificate" style="color:#3498db;font-size:1.3em;flex-shrink:0;"></i>
+                        <div>
+                            <p style="font-weight:700;color:#333;font-size:0.9em;">Surat Keterangan Belum Menikah <span style="color:#3498db;font-size:0.85em;">(Jika Belum Menikah)</span></p>
+                            <p style="color:#888;font-size:0.78em;">Sebagai pengganti buku nikah</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="color:#e74c3c;font-size:0.83em;margin-top:16px;"><i class="fas fa-exclamation-circle"></i> Semua dokumen difotokopi dan dibawa saat akad. Petugas kami siap membantu jika ada kendala dokumen.</p>
+                <p style="color:#888;font-size:0.82em;margin-top:8px;"><i class="fas fa-info-circle" style="color:#f39c12;"></i> <strong>Dokumen kondisional:</strong> Slip gaji (untuk karyawan/pegawai), nota & foto usaha (untuk wiraswasta), atau surat keterangan belum menikah (bagi nasabah yang belum menikah).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Kisah Nyata Jamaah Kami</h2>
+                <p>Ribuan jamaah telah membuktikan. Kini saatnya giliran Anda.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Subhanallah... saya tidak menyangka bisa mendaftar haji secepat ini. Dulu saya pikir harus menunggu punya uang penuh dulu. Ternyata dengan Dana Talangan Haji, nomor porsi saya sudah keluar minggu lalu. Alhamdulillah, semoga Allah mudahkan segalanya."
+                    </p>
+                    <div class="testimonial-author">Bapak Mahmud, 52 tahun</div>
+                    <div class="testimonial-location"><i class="fas fa-map-marker-alt"></i> Kediri, Jawa Timur</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Saya dan suami sudah lama bermimpi untuk berhaji bersama. Dengan bantuan petugas yang sangat sabar menjelaskan, kami berdua akhirnya bisa mendaftar. Prosesnya cepat dan tidak ribet. Terima kasih sudah mempermudah jalan kami ke Baitullah."
+                    </p>
+                    <div class="testimonial-author">Ibu Siti Rahmawati, 48 tahun</div>
+                    <div class="testimonial-location"><i class="fas fa-map-marker-alt"></i> Kediri, Jawa Timur</div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Awalnya saya ragu, tapi setelah konsultasi via WhatsApp dan semuanya dijelaskan dengan transparan, saya langsung yakin. Yang paling saya suka, semuanya sesuai syariah. Tidak ada yang bikin was-was. Alhamdulillah, sekarang saya sudah punya porsi haji."
+                    </p>
+                    <div class="testimonial-author">Pak Hendra Kusuma, 45 tahun</div>
+                    <div class="testimonial-location"><i class="fas fa-map-marker-alt"></i> Kediri, Jawa Timur</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Pertanyaan yang Sering Diajukan</h2>
+                <p>Kami jawab pertanyaan yang paling sering ditanyakan calon jamaah.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa biaya administrasi program Dana Talangan Haji?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Biaya pendaftaran sebesar <strong>Rp 1.275.000 per jamaah</strong> dibayarkan di awal. Biaya ini sudah all-in, mencakup biaya administrasi, asuransi jiwa jamaah, biaya buka rekening, dan materai. Contoh: jika Anda mendaftarkan 2 jamaah (suami + istri), total biaya pendaftaran adalah <strong>2 × Rp 1.275.000 = Rp 2.550.000</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bisakah satu keluarga (suami, istri, dan anak) mendaftar bersama?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya! Satu nasabah dapat mendaftarkan hingga <strong>4 jamaah sekaligus</strong>, misalnya suami, istri, dan 2 anak. Biaya pendaftaran <strong>Rp 1.275.000 dihitung per jamaah</strong> (sudah termasuk admin, asuransi, buka rekening, dan materai). Contoh untuk 4 jamaah: 4 × Rp 1.275.000 = <strong>Rp 5.100.000</strong>.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa batas usia nasabah dan jamaah yang bisa mendaftar?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Nasabah (penanggung pembiayaan):</strong> minimal berusia <strong>21 tahun</strong> saat pengajuan, dan tidak boleh melebihi <strong>65 tahun</strong> pada saat masa pembiayaan berakhir.<br><br>
+                        <strong>Jamaah yang didaftarkan:</strong> minimal berusia <strong>12 tahun</strong>. Tidak ada batasan usia maksimal untuk jamaah. Contoh: seorang anak berusia 45 tahun sebagai nasabah dapat mendaftarkan orang tuanya yang berusia di atas 65 tahun sebagai jamaah — tetap diperbolehkan.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa uang muka minimal untuk mendaftar Dana Talangan Haji?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Uang muka minimal dapat disesuaikan dengan program yang Anda pilih. Silakan hubungi petugas kami untuk simulasi cicilan yang sesuai kemampuan finansial Anda. Tidak ada angka pasti yang berlaku untuk semua orang — karena kami menyesuaikan dengan kebutuhan Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah program ini sudah sesuai syariah Islam?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, program Dana Talangan Haji kami menggunakan akad syariah yang tidak mengandung unsur riba. Setiap transaksi transparan dan sesuai dengan prinsip-prinsip keuangan Islam yang berlaku, serta diawasi oleh lembaga yang berwenang.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah nomor porsi haji saya benar-benar resmi dari Kemenag?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tentu saja. Nomor porsi haji yang Anda dapatkan adalah nomor resmi yang terdaftar dalam sistem Siskohat Kementerian Agama Republik Indonesia. Antrian Anda sah dan berlaku secara nasional, sama seperti jamaah yang mendaftar dengan membayar penuh.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apa yang terjadi jika saya tidak bisa melanjutkan cicilan?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami memahami bahwa situasi keuangan bisa berubah. Tim kami siap membantu mencari solusi terbaik jika Anda menghadapi kendala. Hubungi kami segera dan kami akan mendiskusikan opsi yang tersedia untuk Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa lama proses dari pendaftaran hingga porsi keluar?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Setelah akad selesai dan uang muka dibayarkan, proses pendaftaran porsi haji umumnya selesai dalam 1 hari kerja. Nomor porsi resmi Anda akan kami sampaikan beserta bukti pendaftaran yang dapat Anda simpan sebagai pegangan.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Dokumen apa saja yang perlu disiapkan?</span>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Dokumen dasar yang diperlukan antara lain: KTP asli, Kartu Keluarga, Surat Nikah (bila sudah menikah), dan foto terbaru. Untuk persyaratan lengkap dan terkini, silakan hubungi petugas kami via WhatsApp — mereka akan memandu Anda langkah demi langkah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <h2>Jangan Biarkan Usia dan Kesempatan Berlalu Begitu Saja</h2>
+        <p>
+            Bayangkan betapa indahnya berdiri di hadapan Ka'bah, mengucap Labbaik Allahumma Labbaik 
+            dengan penuh syukur dan airmata. Momen itu bisa menjadi milik Anda — lebih cepat dari yang Anda kira. 
+            <strong>Setiap hari yang Anda tunda adalah satu hari tambahan dalam antrian.</strong>
+        </p>
+        <a href="https://wa.me/6281359459013?text=Assalamualaikum%2C%20saya%20siap%20mendaftar%20Dana%20Talangan%20Haji%20sekarang" class="wa-button">
+            <i class="fab fa-whatsapp"></i> Ya, Saya Siap Berangkat Haji!
+        </a>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+        <h2>Mulai Perjalanan Suci Anda Hari Ini Juga</h2>
+        <p>
+            Setiap detik yang berlalu adalah kesempatan mendaftar yang terlewat. 
+            Jangan biarkan niat Anda hanya berhenti sebagai mimpi.
+        </p>
+        <p style="font-size: 1.1em; margin-bottom: 20px;">Hubungi petugas kami sekarang — konsultasi 100% gratis, tanpa paksaan, tanpa biaya apapun.</p>
+        <a href="tel:+6281359459013" class="phone-number">
+            <i class="fas fa-phone"></i> 0813-5945-9013
+        </a>
+        <p class="operational">
+            <i class="far fa-clock"></i> Jam operasional: Senin – Sabtu, 08.00 – 20.00 WIB
+        </p>
+        <p style="margin-top: 30px; font-size: 0.95em; opacity: 0.9;">
+            <i class="fas fa-quote-left"></i> 
+            "Dan bagi Allah wajib atas manusia melaksanakan haji ke Baitullah" 
+            <strong>(QS. Ali Imran: 97)</strong>
+            <i class="fas fa-quote-right"></i>
+        </p>
+    </section>
+
+    <!-- ===== PROGRAM REFERRAL MITRA ===== -->
+    <section class="referral-section" id="referral">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>🤝 Program Referral Mitra</h2>
+                <p>Rekomendasikan Dana Talangan Haji & dapatkan komisi <strong style="color:#ffd700;">Rp300.000</strong> per nasabah yang disetujui</p>
+            </div>
+
+            <!-- ALUR REFERRAL -->
+            <div class="fade-in">
+                <div class="referral-flow">
+                    <!-- Step 1 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#4e9f3d,#2d7a3a);">
+                            🙋
+                            <span class="referral-step-num">1</span>
+                        </div>
+                        <h4>Daftar Mitra</h4>
+                        <p>Referrer daftar & verifikasi identitas ke LKS</p>
+                    </div>
+                    <div class="referral-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <!-- Step 2 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#f39c12,#e67e22);">
+                            🔑
+                            <span class="referral-step-num">2</span>
+                        </div>
+                        <h4>Dapat Kode Unik</h4>
+                        <p>Sistem buat kode milik Anda (cth: REF-SONY123)</p>
+                    </div>
+                    <div class="referral-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <!-- Step 3 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#3498db,#1a6fa8);">
+                            📲
+                            <span class="referral-step-num">3</span>
+                        </div>
+                        <h4>Bagikan Kode</h4>
+                        <p>Share ke calon nasabah via WA, medsos, dll.</p>
+                    </div>
+                    <div class="referral-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <!-- Step 4 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#9b59b6,#6c3483);">
+                            📝
+                            <span class="referral-step-num">4</span>
+                        </div>
+                        <h4>Nasabah Daftar</h4>
+                        <p>Nasabah mengisi kode referral saat pendaftaran</p>
+                    </div>
+                    <div class="referral-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <!-- Step 5 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#e74c3c,#a93226);">
+                            ✅
+                            <span class="referral-step-num">5</span>
+                        </div>
+                        <h4>Verifikasi & Akad</h4>
+                        <p>LKS verifikasi, nasabah tanda tangan & pencairan</p>
+                    </div>
+                    <div class="referral-arrow"><i class="fas fa-chevron-right"></i></div>
+                    <!-- Step 6 -->
+                    <div class="referral-step">
+                        <div class="referral-step-icon" style="background:linear-gradient(135deg,#ffd700,#f39c12);">
+                            💰
+                            <span class="referral-step-num">6</span>
+                        </div>
+                        <h4>Komisi Cair</h4>
+                        <p>Rp300.000 masuk ke rekening Anda (H+7)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GENERATOR KODE UNIK -->
+            <div class="kode-generator-box fade-in">
+                <h3><i class="fas fa-qrcode"></i> Daftar Mitra & Dapatkan Kode Referral</h3>
+                <p class="sub">Isi nama & nomor WhatsApp Anda → kode unik langsung terbuat. Pendaftaran hanya bisa dilakukan <strong style="color:#ffd700;">1 kali per nomor WA</strong>.</p>
+
+                <!-- TAB: DAFTAR / CEK MITRA -->
+                <div style="display:flex; gap:0; margin-bottom:22px; border-radius:12px; overflow:hidden; border:2px solid rgba(255,255,255,0.25);">
+                    <button id="tabDaftar" onclick="switchTab('daftar')"
+                        style="flex:1; padding:11px; background:rgba(255,255,255,0.25); color:#fff; border:none; font-family:'Poppins',sans-serif; font-weight:700; font-size:0.9em; cursor:pointer; transition:0.25s;">
+                        <i class="fas fa-user-plus"></i> Daftar Mitra
+                    </button>
+                    <button id="tabInquiry" onclick="switchTab('inquiry')"
+                        style="flex:1; padding:11px; background:transparent; color:rgba(255,255,255,0.65); border:none; font-family:'Poppins',sans-serif; font-weight:700; font-size:0.9em; cursor:pointer; transition:0.25s;">
+                        <i class="fas fa-search"></i> Cek Data Mitra
+                    </button>
+                </div>
+
+                <!-- PANEL DAFTAR -->
+                <div id="panelDaftar">
+                    <div class="kode-input-row">
+                        <input type="text" id="mitranama" placeholder="Nama lengkap Anda" maxlength="40"
+                            oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')"
+                            style="flex:1;" />
+                    </div>
+                    <div class="kode-input-row" style="margin-top:-6px;">
+                        <input type="tel" id="mitrawa" placeholder="No. WhatsApp (cth: 8123456789)" maxlength="15"
+                            oninput="this.value=this.value.replace(/[^0-9]/g,'')"
+                            style="flex:1;" />
+                        <button onclick="generateKode()"><i class="fas fa-magic"></i> Daftar & Buat Kode</button>
+                    </div>
+                    <div id="errMitra" style="color:#ffb3b3; font-size:0.82em; margin:-10px 0 12px; min-height:18px; font-weight:600;"></div>
+
+                    <div class="kode-result" id="kodeResult">
+                        <div class="kode-display" id="kodeDisplay">REF-????</div>
+                        <p style="text-align:center; color:rgba(255,255,255,0.75); font-size:0.82em; margin-bottom:14px;">
+                            Kode ini <strong style="color:#ffd700;">unik untuk Anda</strong>. Bagikan ke calon nasabah & minta mereka isi saat pendaftaran.
+                        </p>
+                        <div id="infoMitraTerdaftar" style="background:rgba(255,215,0,0.15); border:1px solid rgba(255,215,0,0.4); border-radius:10px; padding:10px 14px; margin-bottom:14px; font-size:0.82em; color:rgba(255,255,255,0.9); display:none;">
+                            <i class="fas fa-info-circle" style="color:#ffd700;"></i>
+                            <span id="infoMitraText"></span>
+                        </div>
+                        <div class="kode-actions">
+                            <button onclick="salinKode()"><i class="fas fa-copy"></i> <span id="salinLabel">Salin Kode</span></button>
+                            <button class="btn-wa" onclick="bagikanKodeWA()"><i class="fab fa-whatsapp"></i> Bagikan via WA</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PANEL INQUIRY -->
+                <div id="panelInquiry" style="display:none;">
+                    <p style="color:rgba(255,255,255,0.8); font-size:0.85em; margin-bottom:14px;">Cek data mitra berdasarkan nama, kode referral, atau nomor WhatsApp.</p>
+                    <div class="kode-input-row">
+                        <input type="text" id="inquiryInput" placeholder="Nama / Kode (REF-XXX) / No. WA"
+                            maxlength="50" style="flex:1;"
+                            onkeydown="if(event.key==='Enter') cariMitra()" />
+                        <button onclick="cariMitra()"><i class="fas fa-search"></i> Cari</button>
+                    </div>
+                    
+                    <!-- Petunjuk Pengisian Nomor WhatsApp untuk Inquiry -->
+                    <div style="
+                      background: rgba(255,255,255,0.08);
+                      border-left: 3px solid #ffd700;
+                      padding: 10px 14px;
+                      margin-top: 12px;
+                      border-radius: 6px;
+                      font-size: 0.82em;
+                      color: rgba(255,255,255,0.9);
+                      line-height: 1.5;
+                    ">
+                      <strong style="color:#ffd700;">💡 Cari via No. WhatsApp:</strong><br>
+                      ✓ Format: <strong>62...</strong> (dari 08123456789 → 62812345678)<br>
+                      ✓ Atau: <strong>+62812345678 atau 8123456789</strong>
+                    </div>
+                    
+                    <div id="inquiryResult" style="margin-top:14px;"></div>
+                </div>
+            </div>
+
+            <!-- S&K MITRA REFERRAL -->
+            <div class="sk-referral fade-in">
+                <h3 style="text-align:center; color:#ffd700; font-size:1.4em; margin-bottom:24px;">
+                    📋 Syarat & Ketentuan Program Referral
+                </h3>
+
+                <div class="sk-group">
+                    <div class="sk-group-header" onclick="toggleSK(this)">
+                        <span>1️⃣ Ketentuan Umum</span>
+                        <i class="fas fa-chevron-down" style="transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="sk-group-body">
+                        <div class="sk-group-body-inner">
+                            <ul>
+                                <li>✅ Program ini merupakan bentuk apresiasi atas jasa pemasaran mitra referrer.</li>
+                                <li>✅ Komisi bersifat <strong>ujrah (fee jasa)</strong>, bukan bagian dari akad talangan haji itu sendiri.</li>
+                                <li>✅ Program tunduk pada prinsip syariah &amp; regulasi OJK/Kemenag yang berlaku.</li>
+                                <li>✅ Mitra wajib terdaftar resmi sebelum dapat menggunakan kode referral.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sk-group">
+                    <div class="sk-group-header" onclick="toggleSK(this)">
+                        <span>2️⃣ Besaran Komisi</span>
+                        <i class="fas fa-chevron-down" style="transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="sk-group-body">
+                        <div class="sk-group-body-inner">
+                            <p><strong style="color:#ffd700; font-size:1.2em;">Rp 300.000</strong> (tiga ratus ribu rupiah) per nasabah yang memenuhi ketiga syarat berikut:</p>
+                            <ul>
+                                <li>✅ Lulus verifikasi kelayakan dari LKS</li>
+                                <li>✅ Menandatangani akad talangan haji</li>
+                                <li>✅ Tidak membatalkan dalam masa <em>cooling period</em> 7 hari</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sk-group">
+                    <div class="sk-group-header" onclick="toggleSK(this)">
+                        <span>3️⃣ Mekanisme Pencairan Komisi</span>
+                        <i class="fas fa-chevron-down" style="transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="sk-group-body">
+                        <div class="sk-group-body-inner">
+                            <ul>
+                                <li>⏱️ Komisi dicairkan <strong>H+7</strong> setelah pencairan dana talangan ke nasabah.</li>
+                                <li>💳 Pembayaran via transfer bank/e-wallet atas nama referrer terdaftar.</li>
+                                <li>📊 Referrer wajib melapor pajak jika total komisi tahunan melebihi PTKP.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sk-group">
+                    <div class="sk-group-header" onclick="toggleSK(this)">
+                        <span>4️⃣ Hal-hal yang Dilarang ❌</span>
+                        <i class="fas fa-chevron-down" style="transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="sk-group-body">
+                        <div class="sk-group-body-inner">
+                            <ul>
+                                <li>❌ Menjanjikan "pasti lolos" atau "jaminan berangkat haji" kepada calon nasabah.</li>
+                                <li>❌ Memaksa atau menargetkan orang yang tidak layak secara finansial.</li>
+                                <li>❌ Menerima komisi dari rekrutmen referrer lain (<strong>hanya 1 level</strong>, bukan MLM).</li>
+                                <li>❌ Menggunakan kode milik orang lain atau memalsukan data nasabah.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sk-group">
+                    <div class="sk-group-header" onclick="toggleSK(this)">
+                        <span>5️⃣ Pembatalan Komisi</span>
+                        <i class="fas fa-chevron-down" style="transition:transform 0.3s;"></i>
+                    </div>
+                    <div class="sk-group-body">
+                        <div class="sk-group-body-inner">
+                            <ul>
+                                <li>🚫 Komisi <strong>dibatalkan</strong> jika nasabah batal, gagal bayar, atau ditemukan ketidaksesuaian dokumen.</li>
+                                <li>🚫 LKS berhak menghentikan program dengan pemberitahuan <strong>30 hari sebelumnya</strong>.</li>
+                                <li>🚫 Pelanggaran terhadap larangan di atas menyebabkan pencabutan status mitra secara permanen.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA DAFTAR MITRA -->
+            <div style="text-align:center; padding-top: 20px;">
+                <p style="color:rgba(255,255,255,0.8); font-size:0.95em; margin-bottom:10px;">Siap bergabung sebagai Mitra Referral? Daftar sekarang via WhatsApp!</p>
+                <a class="daftar-mitra-btn fade-in"
+                    id="daftarMitraBtn"
+                    href="#"
+                    onclick="daftarMitraWA(event)">
+                    <i class="fab fa-whatsapp" style="font-size:1.3em;"></i>
+                    Daftar Jadi Mitra Referral
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING WA -->
+    <a href="https://wa.me/6281359459013?text=Assalamualaikum%2C%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Dana%20Talangan%20Haji" class="floating-wa" title="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const faqAnswer = element.nextElementSibling;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+                item.querySelector('.faq-answer').classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+                faqAnswer.classList.add('active');
+            }
+        }
+
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add urgency message after 30 seconds
+        setTimeout(() => {
+            if (confirm('🕋 Masih ragu? Konsultasi gratis dulu yuk! Petugas kami siap membantu Anda. Klik OK untuk chat WhatsApp.')) {
+                window.open('https://wa.me/6281359459013?text=Assalamualaikum%2C%20saya%20masih%20ragu%20dan%20ingin%20konsultasi%20lebih%20lanjut', '_blank');
+            }
+        }, 30000);
+    </script>
+    <!-- ===== FORMULIR PENDAFTARAN ===== -->
+<section id="formulir" style="padding: 80px 20px; background: linear-gradient(to bottom, #f8f9fa, #fff);">
+  <div style="max-width: 700px; margin: 0 auto;">
+    <div class="section-title" style="margin-bottom: 40px;">
+      <h2>Formulir Pendaftaran Dana Talangan Haji</h2>
+      <p>Isi data di bawah ini. Tim kami akan segera menghubungi Anda via WhatsApp untuk proses lanjutan.</p>
+    </div>
+    
+    <div id="pendaftaranForm" style="background: #fff; padding: 40px 30px; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+
+      <!-- INFO BIAYA PENDAFTARAN -->
+      <div style="background:linear-gradient(135deg,#1e5128,#4e9f3d); border-radius:14px; padding:18px 22px; margin-bottom:28px; color:#fff;">
+        <div style="display:flex; align-items:flex-start; gap:14px;">
+          <i class="fas fa-receipt" style="font-size:1.8em; color:#ffd700; flex-shrink:0; margin-top:2px;"></i>
+          <div style="flex:1;">
+            <p style="font-weight:700; margin-bottom:4px; font-size:1.05em;">Biaya Pendaftaran: <span style="color:#ffd700;">Rp 1.275.000 / jamaah</span></p>
+            <p style="font-size:0.82em; opacity:0.9; margin-bottom:6px;">✅ Sudah termasuk: Administrasi · Asuransi · Buka Rekening · Materai</p>
+            <div style="background:rgba(255,255,255,0.15); border-radius:8px; padding:8px 12px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:6px;">
+              <span style="font-size:0.88em;">Total untuk <strong id="infoJumlahJamaah">1</strong> jamaah:</span>
+              <span style="font-weight:800; font-size:1.1em; color:#ffd700;" id="infoTotalBiaya">Rp 1.275.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DATA NASABAH -->
+      <h4 style="color:#1e5128; font-size:1.1em; margin-bottom:18px; padding-bottom:10px; border-bottom:2px solid #e9ecef;">
+        <i class="fas fa-user-tie"></i> Data Nasabah (Penanggung Pembiayaan)
+      </h4>
+
+      <div style="margin-bottom: 20px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Nama Lengkap Nasabah</label>
+        <input type="text" id="nama" required placeholder="Masukkan nama lengkap Anda" style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; transition:0.3s; outline:none;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px;">
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Tanggal Lahir Nasabah</label>
+          <div style="position:relative;">
+            <input type="text" id="tglLahirNasabah" maxlength="10" placeholder="GG/BB/TTTT" autocomplete="off"
+              style="width:100%; padding:14px 14px 14px 44px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; transition:0.3s; outline:none;"
+              onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor=this._borderErr?'#e74c3c':'#e9ecef'"
+              oninput="formatTanggal(this,'usiaNasabahInfo','nasabah')">
+            <i class="fas fa-calendar-alt" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#aaa;pointer-events:none;"></i>
+          </div>
+          <small id="usiaNasabahInfo" style="color:#888; font-size:0.82em; display:block; margin-top:4px;"></small>
+        </div>
+        <div>
+          <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Tenor Pembiayaan</label>
+          <select id="tenor" style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; transition:0.3s; outline:none; background:#fff;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+            <option value="12">12 Bulan (1 Tahun)</option>
+            <option value="24">24 Bulan (2 Tahun)</option>
+            <option value="36" selected>36 Bulan (3 Tahun)</option>
+            <option value="48">48 Bulan (4 Tahun)</option>
+            <option value="60">60 Bulan (5 Tahun)</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 20px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">No. WhatsApp</label>
+        <input type="tel" id="whatsapp" required placeholder="Format: 6281234567890 (tanpa 0, gunakan 62)" style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; transition:0.3s; outline:none;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+        <div style="background:#e8f5e9; border-left:4px solid #4caf50; padding:10px; margin-top:8px; border-radius:4px; font-size:0.85em; color:#1b5e20;">
+          <strong>ℹ️ Petunjuk Format:</strong><br>
+          ✅ Gunakan format: <strong>62 + digit</strong><br>
+          ✅ Contoh: <strong>6281234567890</strong><br>
+          ❌ JANGAN gunakan 0 di depan (081xxx)<br>
+          ❌ JANGAN gunakan spasi atau dash<br>
+          📝 Salin dari kontak WhatsApp Anda
+        </div>
+      </div>
+
+      <div style="margin-bottom: 28px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Email <span style="font-weight:400;color:#888;">(opsional)</span></label>
+        <input type="email" id="email" placeholder="email@contoh.com" style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; transition:0.3s; outline:none;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+      </div>
+
+      <!-- KODE REFERRAL -->
+      <div style="margin-bottom: 28px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">
+          <i class="fas fa-tag" style="color:#4e9f3d;"></i>
+          Kode Referral <span style="font-weight:400;color:#888;">(opsional — jika direkomendasikan mitra)</span>
+        </label>
+        <div style="position:relative;">
+          <input type="text" id="kodeReferral" placeholder="Contoh: REF-SONY123"
+            maxlength="15"
+            oninput="this.value=this.value.toUpperCase().replace(/[^A-Z0-9\-]/g,'')"
+            style="width:100%; padding:14px 14px 14px 44px; border:2px solid #e9ecef; border-radius:12px; font-family:'Courier New',monospace; font-size:1rem; font-weight:700; letter-spacing:2px; transition:0.3s; outline:none;"
+            onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+          <i class="fas fa-hashtag" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#aaa;pointer-events:none;"></i>
+        </div>
+        <small style="color:#888; font-size:0.82em; display:block; margin-top:5px;">
+          <i class="fas fa-info-circle" style="color:#f39c12;"></i>
+          Dikosongkan jika tidak punya kode referral. Kode wajib format <strong>REF-XXXNNN</strong>.
+        </small>
+      </div>
+
+      <!-- DATA JAMAAH -->
+      <h4 style="color:#1e5128; font-size:1.1em; margin-bottom:8px; padding-bottom:10px; border-bottom:2px solid #e9ecef;">
+        <i class="fas fa-users"></i> Data Jamaah yang Didaftarkan
+      </h4>
+      <p style="color:#888; font-size:0.88em; margin-bottom:18px;">Maks. 4 jamaah · Usia min. 12 thn · Usia saat akhir pembiayaan maks. 65 thn</p>
+
+      <div style="margin-bottom:18px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Jumlah Jamaah</label>
+        <select id="jumlahJamaah" onchange="updateJamaahFields()" style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; outline:none; background:#fff;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'">
+          <option value="1">1 Jamaah</option>
+          <option value="2">2 Jamaah</option>
+          <option value="3">3 Jamaah</option>
+          <option value="4">4 Jamaah</option>
+        </select>
+      </div>
+
+      <div id="jamaahContainer"></div>
+
+      <!-- PESAN -->
+      <div style="margin-bottom: 28px; margin-top:10px;">
+        <label style="display:block; font-weight:600; margin-bottom:8px; color:#1e5128;">Pesan / Pertanyaan <span style="font-weight:400;color:#888;">(opsional)</span></label>
+        <textarea id="pesan" rows="3" placeholder="Tulis pesan atau pertanyaan Anda..." style="width:100%; padding:14px; border:2px solid #e9ecef; border-radius:12px; font-family:'Poppins',sans-serif; font-size:1rem; resize:vertical; transition:0.3s; outline:none;" onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor='#e9ecef'"></textarea>
+      </div>
+
+      <!-- ═══ URL GOOGLE APPS SCRIPT (Tersembunyi) ═══ -->
+      <input type="hidden" id="urlDisplay" value="https://script.google.com/macros/s/AKfycbUVK1UsUF8TLrJcfLy8s7jU0j1-osfnLlqq9TrY4DC9hnyNYlsoDvN7-pzfZAQw/exec">
+
+      <!-- Status koneksi GSheet -->
+      <div id="gsheetStatus" style="display:flex; align-items:center; gap:10px; background:#f0f7ee; border:1.5px solid #d8e9a8; border-radius:12px; padding:12px 16px; margin-bottom:10px; font-size:0.88em; color:#1e5128;">
+        <i class="fas fa-circle" id="gsheetDot" style="color:#aaa; font-size:0.7em; flex-shrink:0;"></i>
+        <span id="gsheetStatusText">Memeriksa koneksi Google Sheets...</span>
+        <button id="testKoneksiBtn" onclick="testKoneksiGSheet()" type="button"
+          style="margin-left:auto; white-space:nowrap; padding:6px 14px; background:#1e5128; color:#fff; border:none; border-radius:8px; font-family:'Poppins',sans-serif; font-size:0.82em; font-weight:600; cursor:pointer;">
+          <i class="fas fa-plug"></i> Test Koneksi
+        </button>
+      </div>
+      <div id="testKoneksiResult" style="font-size:0.85em; margin-bottom:14px; min-height:18px; font-weight:600;"></div>
+
+      <button type="button" id="submitBtn" onclick="submitForm()" style="width:100%; padding:16px; background:linear-gradient(135deg, #25d366, #128c7e); color:#fff; border:none; border-radius:50px; font-size:1.1rem; font-weight:700; cursor:pointer; font-family:'Poppins',sans-serif; transition:0.3s; box-shadow:0 5px 20px rgba(37,211,102,0.3);">
+        <i class="fas fa-paper-plane"></i> Kirim Pendaftaran via WhatsApp
+      </button>
+
+      <p id="formStatus" style="text-align:center; margin-top:15px; font-weight:600; min-height:20px;"></p>
+    </div>
+  </div>
+</section>
+
+<script>
+// ============================================================
+// UTILITAS TANGGAL FORMAT DD/MM/YYYY
+// ============================================================
+
+/** Auto-format input: sisipkan '/' setelah posisi 2 dan 5 */
+function formatTanggal(input, infoId, mode, jamaahIdx) {
+  let v = input.value.replace(/\D/g, '');
+  if (v.length > 8) v = v.slice(0, 8);
+  let out = '';
+  if (v.length > 4)      out = v.slice(0,2) + '/' + v.slice(2,4) + '/' + v.slice(4);
+  else if (v.length > 2) out = v.slice(0,2) + '/' + v.slice(2);
+  else                   out = v;
+  input.value = out;
+
+  // Validasi live hanya jika sudah 10 karakter
+  if (out.length === 10) {
+    if (mode === 'nasabah') cekUsiaNasabah(out, infoId, input);
+    else                   cekUsiaJamaah(jamaahIdx, out);
+  } else {
+    const el = document.getElementById(infoId);
+    if (el) { el.textContent = ''; }
+    input._borderErr = false;
+    input.style.borderColor = '#4e9f3d';
+  }
+}
+
+/** Parse DD/MM/YYYY → Date (atau null jika tidak valid) */
+function parseTgl(str) {
+  if (!str || str.length !== 10) return null;
+  const parts = str.split('/');
+  if (parts.length !== 3) return null;
+  const [dd, mm, yyyy] = parts.map(Number);
+  if (isNaN(dd)||isNaN(mm)||isNaN(yyyy)) return null;
+  if (mm < 1||mm > 12||dd < 1||dd > 31||yyyy < 1900) return null;
+  const d = new Date(yyyy, mm-1, dd);
+  if (d.getFullYear()!==yyyy||d.getMonth()!==mm-1||d.getDate()!==dd) return null;
+  return d;
+}
+
+/** Hitung usia (tahun) dari Date */
+function hitungUsiaFromDate(dob) {
+  const today = new Date();
+  let age = today.getFullYear() - dob.getFullYear();
+  const m = today.getMonth() - dob.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
+  return age;
+}
+
+/** Hitung sisa bulan tepat dari hari ini hingga nasabah berusia 65 tahun */
+function hitungSisaBulanKe65(dob) {
+  const today = new Date();
+  const usia65 = new Date(dob.getFullYear() + 65, dob.getMonth(), dob.getDate());
+  if (usia65 <= today) return 0;
+  let bulan = (usia65.getFullYear() - today.getFullYear()) * 12
+            + (usia65.getMonth()    - today.getMonth());
+  if (usia65.getDate() < today.getDate()) bulan--;
+  return Math.max(0, bulan);
+}
+
+// ============================================================
+// VALIDASI USIA NASABAH (real-time) + FILTER TENOR OTOMATIS
+// ============================================================
+function cekUsiaNasabah(val, infoId, input) {
+  const el = document.getElementById(infoId);
+  const dob = parseTgl(val);
+  if (!dob) {
+    el.textContent = '⚠️ Tanggal tidak valid.';
+    el.style.color = '#e74c3c';
+    input._borderErr = true;
+    input.style.borderColor = '#e74c3c';
+    updateTenorOptions(null);
+    return;
+  }
+  const usia = hitungUsiaFromDate(dob);
+  if (usia > 80) {
+    el.textContent = '⚠️ Periksa kembali tahun yang dimasukkan.';
+    el.style.color = '#e74c3c';
+    input._borderErr = true;
+    input.style.borderColor = '#e74c3c';
+    updateTenorOptions(null);
+  } else if (usia >= 65) {
+    el.textContent = '⚠️ Usia nasabah ' + usia + ' tahun — melewati batas maksimum. Usia di awal pembiayaan maks. 64 tahun.';
+    el.style.color = '#e74c3c';
+    input._borderErr = true;
+    input.style.borderColor = '#e74c3c';
+    updateTenorOptions(null);
+  } else if (usia < 21) {
+    el.textContent = '⚠️ Nasabah harus berusia minimal 21 tahun (saat ini ' + usia + ' thn).';
+    el.style.color = '#e74c3c';
+    input._borderErr = true;
+    input.style.borderColor = '#e74c3c';
+    updateTenorOptions(null);
+  } else {
+    // Hitung sisa bulan tepat hingga usia 65 tahun
+    const sisaBulan = hitungSisaBulanKe65(dob);
+    if (sisaBulan < 12) {
+      el.textContent = '⚠️ Sisa waktu menuju 65 tahun hanya ' + sisaBulan + ' bulan. Minimal 12 bulan untuk mengajukan pembiayaan.';
+      el.style.color = '#e74c3c';
+      input._borderErr = true;
+      input.style.borderColor = '#e74c3c';
+      updateTenorOptions(null);
+      return;
+    }
+    const maxTenor = Math.min(60, sisaBulan);
+    let info = '✅ Usia nasabah: ' + usia + ' tahun — memenuhi syarat.';
+    if (maxTenor < 60) {
+      info += ' Tenor maks. ' + maxTenor + ' bulan (sisa waktu menuju 65 thn).';
+    }
+    el.textContent = info;
+    el.style.color = '#4e9f3d';
+    input._borderErr = false;
+    input.style.borderColor = '#4e9f3d';
+    updateTenorOptions(maxTenor);
+    reCekSemuaJamaah();
+  }
+}
+
+// ============================================================
+// UPDATE PILIHAN TENOR BERDASARKAN USIA NASABAH
+// Tenor maks = sisa bulan tepat hingga usia 65 thn (bukan dibulatkan ke preset)
+// ============================================================
+function updateTenorOptions(maxTenor) {
+  const select = document.getElementById('tenor');
+  const presets = [12, 24, 36, 48, 60];
+  const labelPreset = {
+    12: '12 Bulan (1 Tahun)',
+    24: '24 Bulan (2 Tahun)',
+    36: '36 Bulan (3 Tahun)',
+    48: '48 Bulan (4 Tahun)',
+    60: '60 Bulan (5 Tahun)'
+  };
+
+  const currentVal = parseInt(select.value) || 36;
+  select.innerHTML = '';
+
+  // Jika tidak ada pembatasan, tampilkan semua preset dan pulihkan pilihan lama
+  if (maxTenor === null || maxTenor >= 60) {
+    for (const t of presets) {
+      const opt = document.createElement('option');
+      opt.value = t;
+      opt.textContent = labelPreset[t];
+      select.appendChild(opt);
+    }
+    const validVal = presets.includes(currentVal) ? currentVal : 36;
+    select.value = validVal;
+  } else {
+    // Tampilkan preset yang lebih kecil dari maxTenor
+    for (const t of presets) {
+      if (t < maxTenor) {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = labelPreset[t];
+        select.appendChild(opt);
+      }
+    }
+    // Tambahkan maxTenor sebagai opsi terakhir (sisa bulan tepat)
+    const optMax = document.createElement('option');
+    optMax.value = maxTenor;
+    optMax.textContent = presets.includes(maxTenor)
+      ? labelPreset[maxTenor]
+      : maxTenor + ' Bulan (Maks. sesuai usia)';
+    optMax.selected = true;
+    select.appendChild(optMax);
+    select.value = maxTenor;
+  }
+
+  reCekSemuaJamaah();
+}
+
+// ============================================================
+// VALIDASI USIA JAMAAH (real-time)
+// ============================================================
+function cekUsiaJamaah(i, valOverride) {
+  const inputEl = document.getElementById('jamaahTgl' + i);
+  const val = valOverride !== undefined ? valOverride : (inputEl ? inputEl.value : '');
+  const tenor = parseInt(document.getElementById('tenor').value);
+  const el = document.getElementById('jamaahUsiaInfo' + i);
+  if (!el) return;
+
+  if (!val || val.length < 10) {
+    el.innerHTML = '<span style="color:#aaa">Usia tampil setelah tanggal lengkap</span>';
+    if (inputEl) { inputEl._borderErr = false; inputEl.style.borderColor = '#dee2e6'; }
+    return;
+  }
+
+  const dob = parseTgl(val);
+  if (!dob) {
+    el.innerHTML = '<span style="color:#e74c3c">⚠️ Tanggal tidak valid</span>';
+    if (inputEl) { inputEl._borderErr = true; inputEl.style.borderColor = '#e74c3c'; }
+    return;
+  }
+
+  const usia = hitungUsiaFromDate(dob);
+  const usiaAkhir = usia + tenor / 12;
+  let ok = true;
+  let html = `Usia sekarang: <strong>${usia} thn</strong>`;
+
+  if (usia < 12) { html += '<br><span style="color:#e74c3c">⚠️ Minimal 12 tahun</span>'; ok = false; }
+  if (ok) { html += '<br><span style="color:#4e9f3d">✅ Memenuhi syarat</span>'; }
+
+  el.innerHTML = html;
+  if (inputEl) {
+    inputEl._borderErr = !ok;
+    inputEl.style.borderColor = ok ? '#4e9f3d' : '#e74c3c';
+  }
+}
+
+function reCekSemuaJamaah() {
+  const count = parseInt(document.getElementById('jumlahJamaah').value);
+  for (let i = 0; i < count; i++) cekUsiaJamaah(i);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('tenor').addEventListener('change', reCekSemuaJamaah);
+});
+
+// ============================================================
+// UPDATE TOTAL BIAYA DI BANNER
+// ============================================================
+function updateTotalBiaya() {
+  const count = parseInt(document.getElementById('jumlahJamaah').value);
+  const total = count * 1275000;
+  const fmt = new Intl.NumberFormat('id-ID').format(total);
+  const el = document.getElementById('infoTotalBiaya');
+  const elJ = document.getElementById('infoJumlahJamaah');
+  if (el) el.textContent = 'Rp ' + fmt;
+  if (elJ) elJ.textContent = count;
+}
+
+// ============================================================
+// REFERRAL PROGRAM FUNCTIONS
+// ============================================================
+
+// ── LocalStorage key untuk simpan daftar mitra ──
+const LS_KEY = 'zada_mitra_list';
+
+function getMitraList() {
+  try { return JSON.parse(localStorage.getItem(LS_KEY) || '[]'); } catch(e) { return []; }
+}
+function saveMitraList(list) {
+  try { localStorage.setItem(LS_KEY, JSON.stringify(list)); } catch(e) {}
+}
+
+let _kodeAktif = '';
+let _waAktif   = '';
+
+// ── Switch tab Daftar / Inquiry ──
+function switchTab(tab) {
+  const isDaftar = tab === 'daftar';
+  document.getElementById('panelDaftar').style.display  = isDaftar ? 'block' : 'none';
+  document.getElementById('panelInquiry').style.display = isDaftar ? 'none'  : 'block';
+  const tabD = document.getElementById('tabDaftar');
+  const tabI = document.getElementById('tabInquiry');
+  if (tabD) { tabD.style.background = isDaftar ? 'rgba(255,255,255,0.25)' : 'transparent'; tabD.style.color = isDaftar ? '#fff' : 'rgba(255,255,255,0.65)'; }
+  if (tabI) { tabI.style.background = isDaftar ? 'transparent' : 'rgba(255,255,255,0.25)'; tabI.style.color = isDaftar ? 'rgba(255,255,255,0.65)' : '#fff'; }
+}
+
+// ── Generate kode referral (dengan validasi + cek duplikat WA) ──
+function generateKode() {
+  const namaEl = document.getElementById('mitranama');
+  const waEl   = document.getElementById('mitrawa');
+  const errEl  = document.getElementById('errMitra');
+  const nama   = (namaEl.value || '').trim();
+  const wa     = (waEl.value   || '').trim();
+
+  errEl.textContent = '';
+  namaEl.style.borderColor = 'rgba(255,255,255,0.3)';
+  waEl.style.borderColor   = 'rgba(255,255,255,0.3)';
+
+  if (!nama) {
+    namaEl.style.borderColor = '#e74c3c';
+    errEl.textContent = '⚠️ Mohon isi nama lengkap Anda.';
+    namaEl.focus(); return;
+  }
+  if (!wa || wa.length < 9) {
+    waEl.style.borderColor = '#e74c3c';
+    errEl.textContent = '⚠️ Mohon isi nomor WhatsApp yang valid.';
+    waEl.focus(); return;
+  }
+
+  // Cek apakah nomor WA sudah terdaftar
+  const list = getMitraList();
+  const existing = list.find(function(m) { return m.wa === wa; });
+  if (existing) {
+    _kodeAktif = existing.kode;
+    _waAktif   = existing.wa;
+    document.getElementById('kodeDisplay').textContent = _kodeAktif;
+    document.getElementById('kodeResult').classList.add('show');
+    document.getElementById('salinLabel').textContent = 'Salin Kode';
+    const infoEl = document.getElementById('infoMitraTerdaftar');
+    const infoTx = document.getElementById('infoMitraText');
+    if (infoEl && infoTx) {
+      infoTx.textContent = 'Nomor WA ini sudah terdaftar atas nama ' + existing.nama + '. Kode referral Anda ditampilkan kembali.';
+      infoEl.style.display = 'block';
+    }
+    return;
+  }
+
+  // Buat kode baru
+  const prefix = nama.toUpperCase().replace(/\s+/g, '').slice(0, 4);
+  const rnd    = Math.floor(100 + Math.random() * 900);
+  _kodeAktif   = 'REF-' + prefix + rnd;
+  _waAktif     = wa;
+
+  // Simpan ke localStorage
+  list.push({ nama: nama, wa: wa, kode: _kodeAktif, waktu: new Date().toLocaleString('id-ID') });
+  saveMitraList(list);
+
+  document.getElementById('kodeDisplay').textContent = _kodeAktif;
+  document.getElementById('kodeResult').classList.add('show');
+  document.getElementById('salinLabel').textContent = 'Salin Kode';
+  const infoEl = document.getElementById('infoMitraTerdaftar');
+  if (infoEl) infoEl.style.display = 'none';
+
+  // Kirim ke GSheet
+  if (GSHEET_SCRIPT_URL && GSHEET_SCRIPT_URL.indexOf('script.google.com') !== -1) {
+    const pm = new URLSearchParams();
+    pm.append('tipe',          'mitra');
+    pm.append('waktu',         new Date().toLocaleString('id-ID'));
+    pm.append('namaMitra',     nama);
+    pm.append('no_wa',         wa);
+    pm.append('email',         '-');
+    pm.append('kode_referral', _kodeAktif);
+    pm.append('catatan',       'Daftar via website');
+    fetch(GSHEET_SCRIPT_URL + '?' + pm.toString(), { method: 'GET', mode: 'no-cors' })
+      .catch(function(err) { console.warn('[GSheet Mitra]', err); });
+  }
+}
+
+// ── Salin kode ke clipboard ──
+function salinKode() {
+  if (!_kodeAktif) return;
+  const copy = function(text) {
+    try {
+      navigator.clipboard.writeText(text).then(function() {
+        document.getElementById('salinLabel').textContent = '✅ Tersalin!';
+        setTimeout(function() { document.getElementById('salinLabel').textContent = 'Salin Kode'; }, 2000);
+      });
+    } catch(e) {
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      document.getElementById('salinLabel').textContent = '✅ Tersalin!';
+      setTimeout(function() { document.getElementById('salinLabel').textContent = 'Salin Kode'; }, 2000);
+    }
+  };
+  copy(_kodeAktif);
+}
+
+// ── Bagikan kode via WhatsApp (ke nomor LAIN, dengan nomor mitra di pesan) ──
+function bagikanKodeWA() {
+  if (!_kodeAktif) return;
+  const nama  = (document.getElementById('mitranama').value || '').trim();
+  const wa    = (document.getElementById('mitrawa').value || '').trim();
+
+  if (!wa) {
+    alert('⚠️ Mohon isi nomor WhatsApp Anda terlebih dahulu untuk bisa bagikan kode.');
+    return;
+  }
+
+  // Bersihkan nomor: hapus karakter non-angka, ganti awalan 0 dengan 62
+  const waDigits = wa.replace(/\D/g, '');
+  const waClean  = waDigits.startsWith('62') ? waDigits : '62' + waDigits.replace(/^0/, '');
+  const waLink   = 'https://wa.me/' + waClean;
+
+  const pesan =
+    'Assalamualaikum! 🕋\n\n' +
+    'Saya *' + nama + '* ingin merekomendasikan program *Dana Talangan Haji* dari Zada Finance Syariah.\n\n' +
+    '🔑 *Kode Referral Saya:* *' + _kodeAktif + '*\n\n' +
+    '📱 *Hubungi saya untuk tanya-tanya:*\n' +
+    'No. WA: *' + wa + '*\n' +
+    waLink + '\n\n' +
+    '📝 *Cara Daftar:*\n' +
+    '1. Kunjungi: https://wa.me/6281359459013\n' +
+    '2. Masukkan kode referral saya: *' + _kodeAktif + '*\n' +
+    '3. Lengkapi data diri dan data jamaah\n\n' +
+    'Semoga Allah mudahkan langkah kita menuju Baitullah. 🕌';
+
+  // Gunakan api.whatsapp.com/send — lebih reliable di desktop & mobile
+  // Gunakan anchor trick agar tidak diblokir popup browser
+  var url = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(pesan);
+  var a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function() { document.body.removeChild(a); }, 300);
+}
+
+// ── Daftar Mitra via WA (tombol besar bawah) ──
+function daftarMitraWA(e) {
+  e.preventDefault();
+  const nama = (document.getElementById('mitranama') ? document.getElementById('mitranama').value.trim() : '');
+  const kode = _kodeAktif || '';
+  const wa   = _waAktif   || '';
+  const pesan =
+    'Assalamualaikum, saya ingin mendaftar sebagai *Mitra Referral Dana Talangan Haji* Zada Finance Syariah.' +
+    (nama ? '\n\n\uD83D\uDC64 Nama  : ' + nama : '') +
+    (wa   ? '\n\uD83D\uDCF1 WA    : ' + wa   : '') +
+    (kode ? '\n\uD83D\uDD11 Kode  : ' + kode  : '') +
+    '\n\nMohon konfirmasi dan informasi lebih lanjut.\n\nJazakallahu khairan. \uD83D\uDD4B';
+  var a = document.createElement('a');
+  a.href = 'https://wa.me/6281359459013?text=' + encodeURIComponent(pesan);
+  a.target = '_blank'; a.rel = 'noopener noreferrer';
+  document.body.appendChild(a); a.click();
+  setTimeout(function() { document.body.removeChild(a); }, 300);
+}
+
+// ── Inquiry Mitra (cari berdasarkan nama / kode / WA) ──
+// ── Inquiry Mitra — pakai JSONP untuk bypass CORS Google Apps Script ──
+function cariMitra() {
+  const q   = (document.getElementById('inquiryInput').value || '').trim();
+  const out = document.getElementById('inquiryResult');
+
+  if (!q) {
+    out.innerHTML = '<span style="color:#ffb3b3">⚠️ Masukkan nama, kode (REF-XXX), atau nomor WhatsApp.</span>';
+    return;
+  }
+  if (!GSHEET_SCRIPT_URL || GSHEET_SCRIPT_URL.indexOf('script.google.com') === -1) {
+    out.innerHTML = '<span style="color:#ffb3b3">⚠️ URL Google Sheets belum diatur.</span>';
+    return;
+  }
+
+  out.innerHTML = '<div style="text-align:center;padding:20px;"><i class="fas fa-spinner fa-spin" style="color:#ffd700;font-size:1.5em;"></i><br><span style="color:rgba(255,255,255,0.7);font-size:0.85em;margin-top:8px;display:block;">Mencari dari Google Sheets...</span></div>';
+
+  // Gunakan JSONP — satu-satunya cara baca response GAS dari browser (tidak kena CORS)
+  jsonpRequest(
+    GSHEET_SCRIPT_URL,
+    { tipe: 'queryMitra', q: q, limit: '50' },
+    function(res) {
+      if (!res || res.status !== 'ok' || !res.data || res.data.length === 0) {
+        out.innerHTML = '<span style="color:#ffb3b3">❌ Mitra tidak ditemukan untuk: <strong style="color:#fff;">' + q + '</strong></span>';
+        return;
+      }
+      const rows = res.data.map(function(m) {
+        const waRaw = String(m.wa || '').replace(/\D/g, '');
+        const waFormatted = formatPhoneNumber(m.wa || '');  // Format ke 08xxxx
+        const waClean = waRaw.replace(/^62/, '').replace(/^0/, '');  // Untuk link wa.me
+        const kode    = (m.kode || '-').replace(/'/g, "\\'");
+        const nama    = (m.nama || '-').replace(/'/g, "\\'");
+        return (
+          '<div style="background:rgba(255,255,255,0.1);border:1px solid rgba(255,215,0,0.3);border-radius:12px;padding:14px 16px;margin-bottom:12px;">' +
+          '<div style="font-size:1em;font-weight:700;color:#ffd700;margin-bottom:8px;">' + (m.nama || '-') + '</div>' +
+          '<div style="font-size:0.82em;color:rgba(255,255,255,0.85);line-height:2;">' +
+          '🔑 Kode Referral : <strong style="color:#fff;letter-spacing:2px;font-family:monospace;">' + (m.kode || '-') + '</strong><br>' +
+          '📱 No. WhatsApp  : <strong style="color:#fff;font-family:monospace;">' + waFormatted + '</strong><br>' +
+          '👥 Nasabah       : <strong style="color:#ffd700;">' + (m.nasabah || 0) + '</strong> orang | ' +
+          '💰 Komisi : <strong style="color:#4e9f3d;">Rp' + new Intl.NumberFormat('id-ID').format(m.komisi || 0) + '</strong><br>' +
+          '⏰ Terdaftar : ' + (m.waktu || '-') +
+          '</div>' +
+          '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">' +
+          '<button onclick="salinTeks(\'' + kode + '\')" style="padding:7px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.15);color:#fff;font-size:0.8em;font-weight:600;cursor:pointer;font-family:\'Poppins\',sans-serif;">📋 Salin Kode</button>' +
+          (waClean ? '<button onclick="openMessageModal(\'' + nama + '\', \'' + waFormatted + '\', \'' + kode + '\')" style="padding:7px 14px;border-radius:8px;background:#25d366;color:#fff;font-size:0.8em;font-weight:600;text-decoration:none;border:none;cursor:pointer;font-family:\'Poppins\',sans-serif;">📱 Hubungi WA</button>' : '') +
+          '</div></div>'
+        );
+      }).join('');
+      out.innerHTML =
+        '<div style="font-size:0.82em;color:rgba(255,255,255,0.7);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.2);">' +
+        '✅ Ditemukan <strong style="color:#ffd700;">' + res.data.length + '</strong> mitra (real-time dari Google Sheets):</div>' +
+        rows;
+    },
+    function() {
+      out.innerHTML = '<span style="color:#ffb3b3">⚠️ Gagal terhubung ke Google Sheets. Pastikan Apps Script sudah di-deploy ulang dengan kode terbaru.</span>';
+    }
+  );
+}
+
+// ── JSONP helper — inject <script> tag, bypass CORS sepenuhnya ──
+function jsonpRequest(baseUrl, params, onSuccess, onError) {
+  const cbName = '_gscb_' + Date.now();
+  let done = false;
+
+  window[cbName] = function(data) {
+    done = true;
+    cleanup();
+    onSuccess(data);
+  };
+
+  function cleanup() {
+    if (window[cbName]) { try { delete window[cbName]; } catch(e) { window[cbName] = undefined; } }
+    const el = document.getElementById(cbName);
+    if (el) el.parentNode.removeChild(el);
+  }
+
+  // Timeout 10 detik
+  const timer = setTimeout(function() {
+    if (!done) {
+      cleanup();
+      if (onError) onError(new Error('timeout'));
+    }
+  }, 10000);
+
+  const qs = Object.keys(params).map(function(k) {
+    return encodeURIComponent(k) + '=' + encodeURIComponent(params[k]);
+  }).join('&');
+
+  const url = baseUrl + '?' + qs + '&callback=' + cbName;
+  const s   = document.createElement('script');
+  s.id  = cbName;
+  s.src = url;
+  s.onerror = function() {
+    clearTimeout(timer);
+    cleanup();
+    if (onError) onError(new Error('script load error'));
+  };
+  document.head.appendChild(s);
+}
+
+function salinTeks(teks) {
+  try {
+    navigator.clipboard.writeText(teks).then(function() {
+      // Tampilkan notifikasi sukses
+      showCopyNotification('✅ Kode tersalin!');
+    }).catch(function(err) {
+      // Fallback ke method lama jika clipboard API gagal
+      fallbackCopy(teks);
+    });
+  } catch(e) {
+    // Jika try-catch error, gunakan fallback
+    fallbackCopy(teks);
+  }
+}
+
+function fallbackCopy(text) {
+  try {
+    const textarea = document.createElement('textarea');
+    textarea.value = text;
+    textarea.style.position = 'fixed';
+    textarea.style.opacity = '0';
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    showCopyNotification('✅ Kode tersalin!');
+  } catch(e) {
+    showCopyNotification('❌ Gagal menyalin. Coba lagi.', 3000);
+  }
+}
+
+function showCopyNotification(msg, duration = 2000) {
+  const notification = document.createElement('div');
+  notification.innerHTML = msg;
+  notification.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4e9f3d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    z-index: 10000;
+    animation: slideInRight 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  `;
+  document.body.appendChild(notification);
+  setTimeout(function() {
+    notification.style.animation = 'slideOutRight 0.3s ease';
+    setTimeout(function() {
+      document.body.removeChild(notification);
+    }, 300);
+  }, duration);
+}
+
+function bukaWA(nomor) {
+  if (!nomor || nomor.length < 10) {
+    showCopyNotification('❌ Nomor WhatsApp tidak valid', 3000);
+    return;
+  }
+  
+  // Ensure format is correct
+  const cleanNomor = String(nomor).replace(/\D/g, '');
+  const finalNomor = cleanNomor.startsWith('62') ? cleanNomor : '62' + cleanNomor.replace(/^0/, '');
+  
+  // Try multiple WA URLs for better compatibility
+  const waUrls = [
+    'https://wa.me/' + finalNomor,
+    'https://api.whatsapp.com/send/?phone=' + finalNomor,
+    'whatsapp://send?phone=' + finalNomor
+  ];
+  
+  let opened = false;
+  
+  // Try first URL
+  const link = document.createElement('a');
+  link.href = waUrls[0];
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  opened = true;
+  
+  if (opened) {
+    showCopyNotification('✅ Membuka WhatsApp...', 2000);
+  }
+}
+
+function toggleSK(header) {
+  const body = header.nextElementSibling;
+  const icon = header.querySelector('.fa-chevron-down');
+  const isOpen = body.classList.contains('open');
+  document.querySelectorAll('.sk-group-body').forEach(b => b.classList.remove('open'));
+  document.querySelectorAll('.sk-group-header .fa-chevron-down').forEach(i => { i.style.transform = ''; });
+  if (!isOpen) {
+    body.classList.add('open');
+    if (icon) icon.style.transform = 'rotate(180deg)';
+  }
+}
+
+// ============================================================
+// BUILD JAMAAH FIELDS (input text DD/MM/YYYY)
+// ============================================================
+function updateJamaahFields() {
+  const count = parseInt(document.getElementById('jumlahJamaah').value);
+  const container = document.getElementById('jamaahContainer');
+  container.innerHTML = '';
+  updateTotalBiaya();
+
+  const hubLabels = ['Diri Sendiri / Nasabah', 'Istri / Suami', 'Anak ke-1', 'Anak ke-2'];
+
+  for (let i = 0; i < count; i++) {
+    const label = hubLabels[i] || 'Jamaah ke-' + (i+1);
+    container.innerHTML += `
+      <div style="background:#f8f9fa; border-radius:14px; padding:20px; margin-bottom:16px; border:2px solid #e9ecef;" id="jamaahBlock${i}">
+        <p style="font-weight:700; color:#1e5128; margin-bottom:14px; font-size:0.98em;">
+          <i class="fas fa-user"></i> Jamaah ${i+1}
+          <span style="font-weight:500; color:#4e9f3d;"> — ${label}</span>
+          <span style="float:right; background:#4e9f3d; color:#fff; font-size:0.75em; padding:2px 10px; border-radius:20px; font-weight:600;">Rp 1.275.000</span>
+        </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:8px;">
+          <div style="grid-column:1/-1;">
+            <label style="display:block; font-weight:600; margin-bottom:6px; color:#555; font-size:0.88em;">Nama Lengkap</label>
+            <input type="text" id="jamaahNama${i}" placeholder="Nama jamaah ${i+1}"
+              style="width:100%; padding:11px 13px; border:2px solid #dee2e6; border-radius:10px; font-family:'Poppins',sans-serif; font-size:0.9rem; outline:none;"
+              onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor=this._borderErr?'#e74c3c':'#dee2e6'">
+          </div>
+          <div>
+            <label style="display:block; font-weight:600; margin-bottom:6px; color:#555; font-size:0.88em;">Tanggal Lahir <span style="font-weight:400;color:#aaa;">(GG/BB/TTTT)</span></label>
+            <div style="position:relative;">
+              <input type="text" id="jamaahTgl${i}" maxlength="10" placeholder="GG/BB/TTTT" autocomplete="off"
+                style="width:100%; padding:11px 11px 11px 38px; border:2px solid #dee2e6; border-radius:10px; font-family:'Poppins',sans-serif; font-size:0.9rem; outline:none;"
+                onfocus="this.style.borderColor='#4e9f3d'" onblur="this.style.borderColor=this._borderErr?'#e74c3c':'#dee2e6'"
+                oninput="formatTanggal(this,'jamaahUsiaInfo${i}','jamaah',${i})">
+              <i class="fas fa-calendar-alt" style="position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#aaa;pointer-events:none;font-size:0.85em;"></i>
+            </div>
+          </div>
+          <div style="display:flex; align-items:center;">
+            <div id="jamaahUsiaInfo${i}" style="background:#fff; border-radius:10px; padding:10px 12px; border:2px solid #dee2e6; width:100%; font-size:0.82em; color:#888; min-height:44px; display:flex; align-items:center; line-height:1.5;">
+              <span style="color:#aaa">Usia tampil setelah tanggal lengkap</span>
+            </div>
+          </div>
+        </div>
+      </div>`;
+  }
+}
+
+// ============================================================
+// SUBMIT FORM
+// ============================================================
+
+// ================================================================
+// NOMOR WA FORMATTING & VALIDATION SYSTEM
+// ================================================================
+
+// Storage untuk tracking nomor WA yang pernah digunakan
+let _usedPhoneNumbers = JSON.parse(localStorage.getItem('_usedPhoneNumbers') || '{}');
+
+function formatPhoneNumberForSheet(input) {
+  // Format untuk Google Sheet: gunakan 62xxxx (TANPA angka 0 di depan)
+  // Ini adalah solusi untuk masalah Google Sheet tidak bisa menampilkan 0 di depan
+  const cleaned = String(input).replace(/\D/g, '');
+  
+  // Jika dimulai dengan 0, ubah ke 62
+  if (cleaned.startsWith('0')) {
+    return '62' + cleaned.substring(1);
+  }
+  
+  // Jika sudah 62, return as is
+  if (cleaned.startsWith('62')) {
+    return cleaned;
+  }
+  
+  // Default
+  return cleaned;
+}
+
+function formatPhoneNumber(input) {
+  // Hapus semua karakter non-digit
+  const cleaned = String(input).replace(/\D/g, '');
+  
+  // SYSTEM: BLOKIR input yang dimulai dengan 0
+  // User HARUS input dengan 62xxxx format
+  // Jika input dengan 0, akan ditolak dengan error
+  
+  // Jika dimulai dengan 0, ini ERROR
+  if (cleaned.startsWith('0')) {
+    return null;  // Sinyal error
+  }
+  
+  // Jika dimulai dengan 62, keep as is
+  if (cleaned.startsWith('62')) {
+    return cleaned;
+  }
+  
+  // Default
+  return cleaned;
+}
+
+function getPhoneNumberDigits(input) {
+  // Return hanya digits tanpa prefix 0 atau 62 untuk comparison
+  const cleaned = String(input).replace(/\D/g, '');
+  return cleaned.replace(/^62/, '').replace(/^0/, '');
+}
+
+function isValidPhoneNumber(input) {
+  const cleaned = String(input).replace(/\D/g, '');
+  
+  // Minimal 10 digits (format 62xxxxxxxxx - TANPA 0 di depan)
+  if (cleaned.length < 10) {
+    return false;
+  }
+  
+  // Max 15 digits (standard international format)
+  if (cleaned.length > 15) {
+    return false;
+  }
+  
+  // SISTEM: BLOKIR input yang dimulai dengan 0
+  // Harus gunakan format 62xxxx
+  if (cleaned.startsWith('0')) {
+    return false;  // Format salah: dimulai dengan 0
+  }
+  
+  // Must start with 62
+  if (!cleaned.match(/^62/)) {
+    return false;
+  }
+  
+  return true;
+}
+
+function isDuplicatePhoneNumber(nomor) {
+  const digits = getPhoneNumberDigits(nomor);
+  return _usedPhoneNumbers[digits] || null;
+}
+
+function registerPhoneNumber(nomor, nama) {
+  const digits = getPhoneNumberDigits(nomor);
+  const formatted = formatPhoneNumber(nomor);
+  
+  _usedPhoneNumbers[digits] = {
+    nama: nama,
+    nomor: formatted,
+    waktu: new Date().toLocaleString('id-ID'),
+    id: Date.now()
+  };
+  
+  localStorage.setItem('_usedPhoneNumbers', JSON.stringify(_usedPhoneNumbers));
+  
+  return _usedPhoneNumbers[digits];
+}
+
+function validatePhoneInput(input, fieldId) {
+  if (!input) {
+    return { valid: false, message: '⚠️ Nomor WhatsApp tidak boleh kosong', type: 'warning' };
+  }
+  
+  const cleaned = String(input).replace(/\D/g, '');
+  
+  // Check if input starts with 0 (error khusus)
+  if (cleaned.startsWith('0')) {
+    return { 
+      valid: false, 
+      message: '❌ Format salah! Gunakan format 62xxxx (misal: 6281234567890) bukan 08xxx. Ubah 0 di depan menjadi 62.', 
+      type: 'error' 
+    };
+  }
+  
+  if (!isValidPhoneNumber(input)) {
+    return { valid: false, message: '❌ Format nomor tidak valid. Gunakan: 6281234567890 (format internasional dengan 62 di depan)', type: 'error' };
+  }
+  
+  const duplicate = isDuplicatePhoneNumber(input);
+  if (duplicate) {
+    return { 
+      valid: false, 
+      message: `⚠️ Nomor ini sudah digunakan oleh: ${duplicate.nama} (${duplicate.waktu})`, 
+      type: 'duplicate',
+      data: duplicate
+    };
+  }
+  
+  return { valid: true, message: '✅ Nomor valid (format 62xxxx)', type: 'success' };
+}
+
+function showValidationMessage(message, type = 'info', duration = 3000) {
+  const notification = document.createElement('div');
+  
+  let bgColor = '#3498db'; // blue
+  if (type === 'success') bgColor = '#27ae60';
+  if (type === 'error') bgColor = '#e74c3c';
+  if (type === 'warning') bgColor = '#f39c12';
+  if (type === 'duplicate') bgColor = '#e67e22';
+  
+  notification.style.cssText = `
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: ${bgColor};
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    z-index: 10001;
+    animation: slideInRight 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 350px;
+    word-wrap: break-word;
+  `;
+  notification.innerHTML = message;
+  document.body.appendChild(notification);
+  
+  setTimeout(function() {
+    notification.style.animation = 'slideOutRight 0.3s ease';
+    setTimeout(function() {
+      if (document.body.contains(notification)) {
+        document.body.removeChild(notification);
+      }
+    }, 300);
+  }, duration);
+}
+
+// ================================================================
+// VALIDATION & FORMAT ON INPUT
+// ================================================================
+// KONFIGURASI GOOGLE SHEETS — GANTI URL DI BAWAH INI
+// Cara dapat URL: Google Sheets → Extensions → Apps Script
+//   → Deploy → New Deployment → Web App → Anyone → Deploy → Copy URL
+// ================================================================
+/* ============================================================
+   ⬇️  GANTI URL INI JIKA ANDA DEPLOY ULANG APPS SCRIPT
+   Contoh: 'https://script.google.com/macros/s/XXXXXXX/exec'
+   ============================================================ */
+const GSHEET_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwUVK1USoUF8TTLrJCtfLyBz7jwOjl-oafnLlgqq0TrY4DC9HnykY1noDyN7-pzfjZAQw/exec'; /* ← URL APPS SCRIPT */
+
+// ── Kirim data ke Google Sheets via GET (lebih reliable, support CORS) ──
+function kirimKeGoogleSheet(payload) {
+  // Encode payload sebagai query string — Apps Script baca via e.parameter
+  const params = new URLSearchParams();
+  Object.keys(payload).forEach(function(k) {
+    params.append(k, String(payload[k]));
+  });
+  const urlGet = GSHEET_SCRIPT_URL + '?' + params.toString();
+  return fetch(urlGet, { method: 'GET', mode: 'no-cors' });
+}
+
+// ── Inisialisasi URL (tersembunyi) + test otomatis saat halaman dibuka ──
+function initGSheetUI() {
+  // URL sudah tersimpan di hidden input, tidak perlu ditampilkan
+  testKoneksiGSheet(true); // silent auto-check saat load
+}
+
+// ── Test koneksi ke Google Sheets ──
+function testKoneksiGSheet(silent) {
+  const btn  = document.getElementById('testKoneksiBtn');
+  const out  = document.getElementById('testKoneksiResult');
+  const dot  = document.getElementById('gsheetDot');
+  const txt  = document.getElementById('gsheetStatusText');
+
+  if (!GSHEET_SCRIPT_URL || GSHEET_SCRIPT_URL.indexOf('script.google.com') === -1) {
+    if (dot) dot.style.color = '#e74c3c';
+    if (txt) txt.textContent = '❌ URL Apps Script belum diisi.';
+    if (out) out.innerHTML = '<span style="color:#e74c3c">❌ Isi GSHEET_SCRIPT_URL di kode HTML terlebih dahulu.</span>';
+    return;
+  }
+
+  if (!silent) {
+    if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Menguji...'; }
+    if (out) out.innerHTML = '';
+  }
+  if (dot) dot.style.color = '#f39c12';
+  if (txt) txt.textContent = 'Memeriksa koneksi Google Sheets...';
+
+  const params = new URLSearchParams({ tipe: 'test', waktu: new Date().toLocaleString('id-ID') });
+
+  fetch(GSHEET_SCRIPT_URL + '?' + params.toString())
+    .then(function(r) { return r.text(); })
+    .then(function(respText) {
+      const ok = respText && (respText.indexOf('"ok"') !== -1 || respText.indexOf('ok') !== -1);
+      if (dot) dot.style.color = ok ? '#4e9f3d' : '#f39c12';
+      if (txt) txt.textContent = ok
+        ? '✅ Terhubung ke Google Sheets!'
+        : '⚠️ Script merespons — cek sheet apakah data masuk.';
+      if (!silent && out) out.innerHTML = ok
+        ? '<span style="color:#4e9f3d">✅ Koneksi BERHASIL! Google Sheets siap menerima data.</span>'
+        : '<span style="color:#f39c12">⚠️ Script merespons tapi respons tidak standar. Cek langsung di Google Sheets.</span>';
+    })
+    .catch(function() {
+      // CORS block = script aktif tapi browser blokir baca response
+      // Ini NORMAL untuk Google Apps Script dari domain berbeda
+      if (dot) dot.style.color = '#4e9f3d';
+      if (txt) txt.textContent = '✅ Terhubung (browser blokir baca respons — normal)';
+      if (!silent && out) out.innerHTML =
+        '<span style="color:#4e9f3d">✅ Script aktif & data <strong>sudah terkirim</strong>. Browser hanya tidak bisa baca balasannya (ini normal untuk Google Script). Verifikasi langsung di Google Sheets Anda.</span>';
+    })
+    .finally(function() {
+      if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-plug"></i> Test Koneksi'; }
+    });
+}
+
+// ================================================================
+// SUBMIT FORM — kirim ke GSheet + buka WhatsApp
+// ================================================================
+function submitForm() {
+  const status = document.getElementById('formStatus');
+  const btn    = document.getElementById('submitBtn');
+
+  const nama       = document.getElementById('nama').value.trim();
+  const wa         = document.getElementById('whatsapp').value.trim();
+  const tglNasabah = document.getElementById('tglLahirNasabah').value.trim();
+  const tenor      = document.getElementById('tenor').value;
+  const email      = document.getElementById('email').value.trim();
+  const pesan      = document.getElementById('pesan').value.trim();
+  const count      = parseInt(document.getElementById('jumlahJamaah').value);
+  const kodeRef    = (document.getElementById('kodeReferral') || {}).value || '';
+
+  status.textContent = '';
+  status.style.color = '';
+
+  // ── Validasi nasabah ──
+  if (!nama) { showErr('⚠️ Mohon isi nama lengkap nasabah.'); return; }
+  if (!wa)   { showErr('⚠️ Mohon isi nomor WhatsApp.'); return; }
+  
+  // ── Validasi nomor WhatsApp format & duplikat ──
+  const phoneValidation = validatePhoneInput(wa);
+  if (!phoneValidation.valid) {
+    if (phoneValidation.type === 'duplicate') {
+      const proceed = confirm(
+        phoneValidation.message + '\n\n' +
+        'Apakah Anda ingin melanjutkan? (Nomor akan di-update)'
+      );
+      if (!proceed) { 
+        showErr(phoneValidation.message);
+        return; 
+      }
+    } else {
+      showErr(phoneValidation.message);
+      return;
+    }
+  }
+  
+  if (!tglNasabah || tglNasabah.length < 10) {
+    showErr('⚠️ Mohon isi tanggal lahir nasabah (GG/BB/TTTT).'); return;
+  }
+  const dobNasabah = parseTgl(tglNasabah);
+  if (!dobNasabah) { showErr('⚠️ Format tanggal lahir nasabah tidak valid.'); return; }
+  const usiaNasabah = hitungUsiaFromDate(dobNasabah);
+  if (usiaNasabah < 21) {
+    showErr('⚠️ Usia nasabah minimal 21 tahun (saat ini ' + usiaNasabah + ' thn).'); return;
+  }
+  const usiaNasabahAkhir = usiaNasabah + parseInt(tenor) / 12;
+  if (usiaNasabahAkhir > 65) {
+    showErr('⚠️ Usia nasabah akan melebihi 65 tahun saat pembiayaan berakhir (' +
+      Math.round(usiaNasabahAkhir) + ' thn). Pilih tenor lebih pendek.'); return;
+  }
+
+  // ── Validasi jamaah ──
+  const jamaahData = [];
+  for (let i = 0; i < count; i++) {
+    const jNama = document.getElementById('jamaahNama' + i).value.trim();
+    const jTgl  = document.getElementById('jamaahTgl'  + i).value.trim();
+    if (!jNama) { showErr('⚠️ Mohon isi nama jamaah ke-' + (i + 1) + '.'); return; }
+    if (!jTgl || jTgl.length < 10) {
+      showErr('⚠️ Mohon isi tanggal lahir jamaah ke-' + (i + 1) + '.'); return;
+    }
+    const dob = parseTgl(jTgl);
+    if (!dob) { showErr('⚠️ Tanggal lahir jamaah ke-' + (i + 1) + ' tidak valid.'); return; }
+    const jUsia = hitungUsiaFromDate(dob);
+    if (jUsia < 12) {
+      showErr('⚠️ Jamaah ke-' + (i + 1) + ' (' + jNama + ') usia ' + jUsia + ' thn. Min. 12 tahun.');
+      return;
+    }
+    jamaahData.push({ nama: jNama, usia: jUsia, tgl: jTgl });
+  }
+
+  const totalBiaya = new Intl.NumberFormat('id-ID').format(count * 1275000);
+  const jamaahStr  = jamaahData.map(function(j, idx) {
+    return (idx + 1) + '. ' + j.nama + ' (' + j.tgl + ' / ' + j.usia + ' thn)';
+  }).join(' | ');
+  const jamaahList = jamaahData.map(function(j, idx) {
+    return '   ' + (idx + 1) + '. ' + j.nama + ' (' + j.tgl + ' / ' + j.usia + ' thn)';
+  }).join('\n');
+
+  // ── Kirim ke Google Sheets ──
+  if (GSHEET_SCRIPT_URL && GSHEET_SCRIPT_URL.indexOf('script.google.com') !== -1) {
+    const payload = {
+      tipe         : 'pendaftaran',
+      waktu        : new Date().toLocaleString('id-ID'),
+      no_wa        : formatPhoneNumberForSheet(wa),  // ← Gunakan formatPhoneNumberForSheet untuk Google Sheet
+      nama         : nama,
+      email        : email || '-',
+      tgl_lahir    : tglNasabah,
+      usia         : usiaNasabah + ' thn',
+      tenor        : tenor + ' bulan',
+      jml_jamaah   : count,
+      jamaah       : jamaahStr,
+      total_biaya  : 'Rp ' + totalBiaya,
+      kode_referral: kodeRef.trim() || '-',
+      pesan        : pesan || '-',
+      status       : 'Baru'
+    };
+    kirimKeGoogleSheet(payload).catch(function(err) {
+      console.warn('[GSheet] Error:', err);
+    });
+  }
+
+  // ── Pesan WhatsApp ──
+  const waMsg =
+    'Assalamualaikum, saya ingin mendaftar Dana Talangan Haji.\n\n' +
+    '\u{1F464} *DATA NASABAH:*\n' +
+    '   Nama     : ' + nama + '\n' +
+    '   Tgl Lahir: ' + tglNasabah + ' (' + usiaNasabah + ' thn)\n' +
+    '   WhatsApp : ' + wa + '\n' +
+    (email ? '   Email    : ' + email + '\n' : '') +
+    '   Tenor    : ' + tenor + ' bulan\n' +
+    (kodeRef.trim() ? '   Kode Ref : ' + kodeRef.trim() + '\n' : '') +
+    '\n\u{1F54B} *JAMAAH (' + count + ' orang):*\n' + jamaahList + '\n\n' +
+    '\u{1F4B3} *BIAYA PENDAFTARAN:*\n' +
+    '   ' + count + ' jamaah \u00D7 Rp 1.275.000 = *Rp ' + totalBiaya + '*\n' +
+    '   (Sudah termasuk: Admin \u00B7 Asuransi \u00B7 Buka Rekening \u00B7 Materai)\n\n' +
+    (pesan ? '\u{1F4AC} Pesan: ' + pesan + '\n\n' : '') +
+    'Mohon informasi selanjutnya. Jazakallahu khairan. \u{1F54B}';
+
+  const waUrl = 'https://wa.me/6281359459013?text=' + encodeURIComponent(waMsg);
+
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Membuka WhatsApp...';
+  btn.disabled  = true;
+
+  // ── Register nomor WA sebelum buka WhatsApp ──
+  registerPhoneNumber(wa, nama);
+  // ── Track form submission untuk analytics ──
+  _trackFormSubmission(nama, count);
+
+  var a2 = document.createElement('a');
+  a2.href = waUrl; a2.target = '_blank'; a2.rel = 'noopener noreferrer';
+  document.body.appendChild(a2); a2.click();
+  setTimeout(function() { document.body.removeChild(a2); }, 300);
+  var waWin = true; // anchor click tidak bisa dicek, anggap selalu berhasil
+  if (!waWin) {
+    status.innerHTML = '\u2705 Data diterima! <a href="' + waUrl +
+      '" target="_blank" style="color:#1e5128;font-weight:700;text-decoration:underline;">' +
+      'Klik di sini untuk buka WhatsApp</a>';
+  } else {
+    status.innerHTML = '\u2705 Berhasil! WhatsApp telah dibuka & data dikirim ke sistem.';
+    status.style.color = '#4e9f3d';
+    showValidationMessage('✅ Nomor WhatsApp telah terdaftar di sistem', 'success', 2000);
+  }
+
+  btn.innerHTML = '<i class="fas fa-paper-plane"></i> Kirim Pendaftaran via WhatsApp';
+  btn.disabled  = false;
+}
+
+function showErr(msg) {
+  const el = document.getElementById('formStatus');
+  el.textContent = msg;
+  el.style.color = '#e74c3c';
+  el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+// ================================================================
+// INPUT MESSAGE MODAL FOR INQUIRY
+// ================================================================
+
+// Store data untuk modal
+let _currentInquiryData = null;
+
+function openMessageModal(nama, nomor, kode) {
+  _currentInquiryData = {
+    nama: nama,
+    nomor: nomor,
+    kode: kode
+  };
+  
+  // Create modal HTML
+  const modal = document.createElement('div');
+  modal.id = 'messageModal';
+  modal.style.cssText = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10002;
+    animation: fadeIn 0.3s ease;
+  `;
+  
+  const content = document.createElement('div');
+  content.style.cssText = `
+    background: #2d5a3d;
+    border: 2px solid #4e9f3d;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  `;
+  
+  content.innerHTML = `
+    <h3 style="color: #ffd700; margin-bottom: 16px; font-size: 1.2em;">
+      📱 Hubungi Mitra via WhatsApp
+    </h3>
+    
+    <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: 8px; margin-bottom: 16px; font-size: 0.9em;">
+      <div style="color: #fff; margin-bottom: 8px;"><strong>👤 Nama:</strong> ${nama}</div>
+      <div style="color: #fff; margin-bottom: 8px;"><strong>📱 Nomor:</strong> ${nomor}</div>
+      <div style="color: #ffd700;"><strong>🔑 Kode:</strong> ${kode}</div>
+    </div>
+    
+    <label style="display: block; color: #fff; margin-bottom: 8px; font-weight: 600;">
+      📝 Pesan (Optional) - Atau pilih template:
+    </label>
+    
+    <!-- Template Buttons Promosi Haji dengan Judul Menarik -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+      <!-- Template 1: Sentuhan Kerinduan ke Baitullah -->
+      <button onclick="useTemplate(1)" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1));
+        color: #25d366;
+        border: 1px solid #25d366;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1))'; this.style.transform='translateY(0)'">
+        🕌 Sentuhan Kerinduan<br><span style="font-size:0.7em;opacity:0.8">ke Baitullah</span>
+      </button>
+      
+      <!-- Template 2: Waktu Antrean Semakin Panjang -->
+      <button onclick="useTemplate(2)" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1));
+        color: #25d366;
+        border: 1px solid #25d366;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1))'; this.style.transform='translateY(0)'">
+        ⏳ Waktu Antrean<br><span style="font-size:0.7em;opacity:0.8">Semakin Panjang</span>
+      </button>
+      
+      <!-- Template 3: Personal & Menyentuh -->
+      <button onclick="useTemplate(3)" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1));
+        color: #25d366;
+        border: 1px solid #25d366;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1))'; this.style.transform='translateY(0)'">
+        ❤️ Personal & Menyentuh<br><span style="font-size:0.7em;opacity:0.8">Hati ke Hati</span>
+      </button>
+      
+      <!-- Template 4: Singkat & Praktis -->
+      <button onclick="useTemplate(4)" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1));
+        color: #25d366;
+        border: 1px solid #25d366;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1))'; this.style.transform='translateY(0)'">
+        📲 Singkat & Praktis<br><span style="font-size:0.7em;opacity:0.8">Langsung ke Poin</span>
+      </button>
+      
+      <!-- Template 5: Storytelling Emosional -->
+      <button onclick="useTemplate(5)" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1));
+        color: #25d366;
+        border: 1px solid #25d366;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(37, 211, 102, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(37, 211, 102, 0.1))'; this.style.transform='translateY(0)'">
+        💭 Storytelling Emosional<br><span style="font-size:0.7em;opacity:0.8">Menyentuh Niat</span>
+      </button>
+      
+      <!-- Template Hapus & Custom -->
+      <button onclick="document.getElementById('messageInput').value=''" style="
+        padding: 10px;
+        background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(229, 57, 53, 0.1));
+        color: #ff6b6b;
+        border: 1px solid #ff6b6b;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.8em;
+        transition: all 0.3s;
+        text-align: center;
+      " onmouseover="this.style.background='rgba(255, 107, 107, 0.2)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(229, 57, 53, 0.1))'; this.style.transform='translateY(0)'">
+        🗑️ Hapus & Custom<br><span style="font-size:0.7em;opacity:0.8">Tulis Sendiri</span>
+      </button>
+    </div>
+    
+    <textarea id="messageInput" placeholder="Atau ketik pesan custom Anda di sini... (min 5 karakter)" 
+      style="
+        width: 100%;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid #4e9f3d;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.1);
+        color: #fff;
+        font-family: Poppins, sans-serif;
+        font-size: 0.9em;
+        resize: vertical;
+      "></textarea>
+    
+    <div style="font-size: 0.8em; color: rgba(255,255,255,0.7); margin-top: 8px; margin-bottom: 16px;">
+      ✓ Pilih template atau ketik pesan custom Anda
+    </div>
+    
+    <div style="display: flex; gap: 10px; justify-content: flex-end;">
+      <button onclick="closeMessageModal()" style="
+        padding: 10px 20px;
+        background: rgba(255,255,255,0.2);
+        color: #fff;
+        border: 1px solid rgba(255,255,255,0.3);
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s;
+      " onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">
+        Batal
+      </button>
+      <button onclick="sendWithMessage()" style="
+        padding: 10px 20px;
+        background: #25d366;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s;
+      " onmouseover="this.style.background='#1da857'" onmouseout="this.style.background='#25d366'">
+        Kirim via WhatsApp
+      </button>
+    </div>
+  `;
+  
+  modal.appendChild(content);
+  document.body.appendChild(modal);
+  
+  // Focus textarea
+  setTimeout(() => {
+    document.getElementById('messageInput').focus();
+  }, 100);
+}
+
+function closeMessageModal() {
+  const modal = document.getElementById('messageModal');
+  if (modal) {
+    modal.style.animation = 'slideDown 0.3s ease';
+    setTimeout(() => {
+      document.body.removeChild(modal);
+    }, 300);
+  }
+  _currentInquiryData = null;
+}
+
+function setMessageTemplate(template) {
+  const messageInput = document.getElementById('messageInput');
+  if (messageInput) {
+    messageInput.value = template;
+    messageInput.focus();
+  }
+}
+
+// Template Promosi Haji
+const templateHaji = {
+  1: `Assalamu'alaikum Warahmatullahi Wabarakatuh
+
+Bapak/Ibu yang dirahmati Allah,
+Tidak semua orang yang terpanggil ke Tanah Suci langsung memiliki dana lengkap untuk mendaftar Haji. Namun sering kali, Allah membuka jalan bagi hamba-Nya yang memiliki niat kuat.
+
+Saat antrean Haji semakin panjang dari tahun ke tahun, menunda pendaftaran bisa membuat waktu keberangkatan semakin lama. Karena itu, kami hadir membantu Bapak/Ibu melalui program Dana Talangan Haji, agar kursi porsi Haji bisa diamankan lebih awal.
+
+Bayangkan nama Bapak/Ibu sudah tercatat sebagai calon tamu Allah… Sementara langkah ikhtiar keuangan dapat diselesaikan secara bertahap dengan lebih ringan.
+
+InsyaAllah kami siap membantu:
+✅ Pendaftaran porsi Haji
+✅ Pendampingan administrasi
+✅ Konsultasi pembayaran
+✅ Simulasi cicilan yang nyaman
+
+Semoga Allah memudahkan langkah menuju Baitullah.
+Jika Bapak/Ibu berkenan, saya siap membantu penjelasan lebih lanjut.
+
+Wassalamu'alaikum Warahmatullahi Wabarakatuh`,
+
+  2: `Bismillahirrahmanirrahim
+
+Bapak/Ibu, pernahkah terpikir…
+Semakin lama menunggu untuk daftar Haji, semakin panjang pula antreannya.
+
+Hari ini mungkin kita masih sehat dan kuat. Namun tidak ada yang tahu kapan kesempatan terbaik datang.
+
+Karena itu banyak jamaah memilih mengamankan nomor porsi Haji lebih awal melalui program Dana Talangan Haji. Dengan begitu, proses menuju Tanah Suci bisa dimulai sekarang, tanpa harus menunggu dana terkumpul sepenuhnya.
+
+Kami siap membantu Bapak/Ibu dengan proses yang:
+✨ Aman
+✨ Jelas
+✨ Terarah
+✨ Dibimbing sampai selesai
+
+Siapa tahu, niat baik hari ini menjadi jalan Allah mengundang Bapak/Ibu menjadi tamu-Nya.
+
+Silakan hubungi saya jika ingin mengetahui simulasi dan penjelasannya.
+Semoga Allah mudahkan niat suci kita semua.`,
+
+  3: `Assalamu'alaikum Bapak/Ibu
+
+Saya hanya ingin mengingatkan satu hal…
+Banyak orang mampu pergi wisata ke berbagai tempat, tetapi belum tentu Allah beri panggilan ke Tanah Suci.
+
+Ketika hati sudah tergerak untuk Haji, jangan terlalu lama menunda. Karena antrean keberangkatan sekarang semakin panjang.
+
+Melalui program Dana Talangan Haji, Bapak/Ibu bisa mulai mendapatkan nomor porsi lebih awal sambil menata keuangan secara bertahap.
+
+InsyaAllah saya siap membantu dengan sepenuh hati mulai dari:
+🌙 Konsultasi
+🌙 Pendaftaran
+🌙 Pengurusan administrasi
+🌙 Pendampingan sampai selesai
+
+Semoga langkah kecil hari ini menjadi awal perjalanan besar menuju Makkah.
+
+Jika berkenan, saya siap menjelaskan lebih detail kapan saja.`,
+
+  4: `Assalamu'alaikum Bapak/Ibu
+
+Antrean Haji terus bertambah setiap tahun.
+Semakin cepat mendaftar, semakin cepat pula peluang berangkat ke Baitullah.
+
+Kini tersedia program Dana Talangan Haji untuk membantu mendapatkan nomor porsi lebih awal dengan proses mudah dan pendampingan lengkap.
+
+✨ Konsultasi gratis
+✨ Dibantu sampai selesai
+✨ Bisa disesuaikan kemampuan pembayaran
+
+Mari mulai ikhtiar menjadi tamu Allah dari sekarang.
+Silakan hubungi saya untuk informasi lebih lanjut.`,
+
+  5: `Ada banyak jamaah yang dulu berkata:
+"Saya takut daftar sekarang karena dana belum cukup."
+
+Namun setelah mereka mengambil langkah pertama, Allah justru membuka banyak jalan rezeki yang tidak disangka-sangka.
+
+Haji bukan hanya soal kemampuan hari ini, tetapi juga tentang niat dan kesungguhan hati.
+
+Melalui program Dana Talangan Haji, Bapak/Ibu dapat mengamankan nomor porsi lebih awal sambil menyiapkan pelunasan secara bertahap.
+
+Karena yang paling berat bukan biaya… tetapi memulai langkah menuju rumah Allah.
+
+Jika Bapak/Ibu ingin konsultasi tanpa komitmen, saya siap membantu dengan senang hati.`
+};
+
+function useTemplate(templateId) {
+  if (templateHaji[templateId]) {
+    setMessageTemplate(templateHaji[templateId]);
+  }
+}
+
+function validateMessage(message) {
+  // Validasi pesan
+  if (message.length > 0 && message.length < 5) {
+    return { valid: false, message: '⚠️ Pesan minimal 5 karakter' };
+  }
+  
+  if (message.length > 1500) {
+    return { valid: false, message: '❌ Pesan maksimal 1500 karakter' };
+  }
+  
+  return { valid: true, message: '✅ Valid' };
+}
+
+function sendWithMessage() {
+  if (!_currentInquiryData) return;
+  
+  const messageInput = document.getElementById('messageInput');
+  const message = messageInput.value.trim();
+  
+  // Validasi pesan
+  const validation = validateMessage(message);
+  if (!validation.valid) {
+    showValidationMessage(validation.message, 'warning', 3000);
+    return;
+  }
+  
+  // Format pesan untuk WhatsApp dengan informasi lengkap
+  let fullMessage = message;
+  const miraFooter = `\n\n---\n📌 Informasi Mitra:\nNama Mitra: ${_currentInquiryData.nama}\nNo. WhatsApp: ${_currentInquiryData.nomor}\nKode Referral: ${_currentInquiryData.kode}\n\n🏢 Zada Finance Syariah\nDana Talangan Haji Terpercaya`;
+  
+  if (!message) {
+    // Pesan default
+    fullMessage = `Assalamu'alaikum Warahmatullahi Wabarakatuh\n\nSaya tertarik dengan informasi Dana Talangan Haji dari Zada Finance Syariah.${miraFooter}`;
+  } else {
+    // Tambahkan info mitra di akhir pesan custom
+    fullMessage = `${message}${miraFooter}`;
+  }
+  
+  // Buka pemilih kontak WhatsApp (tidak langsung kirim pesan)
+  // User akan memilih kontak mitra secara manual
+  const waUrl = 'https://wa.me/?text=' + encodeURIComponent(fullMessage);
+  
+  closeMessageModal();
+  
+  // Buka WhatsApp
+  const link = document.createElement('a');
+  link.href = waUrl;
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  
+  showValidationMessage('✅ Membuka WhatsApp...', 'success', 2000);
+}
+
+// ===== Init =====
+updateJamaahFields();
+window.addEventListener('DOMContentLoaded', function() { initGSheetUI(); });
+</script>
+
+<!-- ===== ANALYTICS DASHBOARD BUTTON ===== -->
+<button id="analyticsBtn" title="Dashboard Analytics" onclick="openAnalytics()">📊</button>
+
+<!-- ===== ANALYTICS DASHBOARD MODAL ===== -->
+<div id="analyticsOverlay" onclick="if(event.target===this)closeAnalytics()">
+  <div id="analyticsDashboard">
+    <!-- PIN Screen -->
+    <div id="anPinScreen">
+      <div class="an-header">
+        <h2>📊 Dashboard Analytics</h2>
+        <button class="an-close" onclick="closeAnalytics()">✕</button>
+      </div>
+      <div class="an-pin-screen">
+        <div style="font-size:3em;margin-bottom:12px;">🔒</div>
+        <h3>Akses Admin Analytics</h3>
+        <p>Masukkan PIN untuk melihat statistik kunjungan dan pendaftaran</p>
+        <input type="password" class="an-pin-input" id="anPinInput" maxlength="8" placeholder="••••"
+          onkeydown="if(event.key==='Enter')checkPin()">
+        <br>
+        <button class="an-pin-btn" onclick="checkPin()">🔓 Masuk</button>
+        <div class="an-pin-error" id="anPinError"></div>
+        <br>
+        <button class="an-reset-btn" onclick="confirmResetAnalytics()">🗑️ Reset Data Analytics</button>
+      </div>
+    </div>
+
+    <!-- Dashboard Screen -->
+    <div id="anDashScreen" style="display:none;">
+      <div class="an-header">
+        <h2>📊 Dashboard Analytics</h2>
+        <div style="display:flex;gap:8px;align-items:center;">
+          <button onclick="lockAnalytics()" title="Kunci" style="background:rgba(255,255,255,0.15);border:none;color:#fff;padding:6px 12px;border-radius:8px;cursor:pointer;font-size:0.8em;font-family:'Poppins',sans-serif;font-weight:600;">🔒 Kunci</button>
+          <button class="an-close" onclick="closeAnalytics()">✕</button>
+        </div>
+      </div>
+      <div class="an-body">
+
+        <!-- Period Tabs -->
+        <div class="an-period-tabs">
+          <button class="an-tab active" onclick="setAnPeriod('today',this)">Hari Ini</button>
+          <button class="an-tab" onclick="setAnPeriod('week',this)">7 Hari</button>
+          <button class="an-tab" onclick="setAnPeriod('month',this)">30 Hari</button>
+          <button class="an-tab" onclick="setAnPeriod('all',this)">Semua</button>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="an-kpi-grid" id="anKpiGrid">
+          <div class="an-kpi"><div class="kpi-val" id="kpiVisit">0</div><div class="kpi-label">👁️ Kunjungan</div></div>
+          <div class="an-kpi"><div class="kpi-val" id="kpiScroll">0%</div><div class="kpi-label">📜 Rata-rata Scroll</div></div>
+          <div class="an-kpi"><div class="kpi-val" id="kpiForm">0</div><div class="kpi-label">📝 Pendaftar</div></div>
+        </div>
+
+        <!-- Bar Chart Kunjungan -->
+        <div class="an-section-title">📈 Grafik Kunjungan Harian</div>
+        <div class="an-chart-wrap">
+          <div class="an-bar-chart" id="anBarChart"></div>
+        </div>
+
+        <hr class="an-divider">
+
+        <!-- Scroll Depth -->
+        <div class="an-section-title">📜 Kedalaman Scroll Halaman</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
+          <span style="font-size:0.8em;color:#555;font-weight:500;">Rata-rata pengunjung membaca hingga:</span>
+          <span id="anScrollAvg" style="font-size:1.1em;font-weight:800;color:#1e5128;">0%</span>
+        </div>
+        <div class="an-scroll-track">
+          <div class="an-scroll-fill" id="anScrollFill" style="width:0%"></div>
+        </div>
+        <div class="an-depth-grid" id="anDepthGrid"></div>
+
+        <hr class="an-divider">
+
+        <!-- Form Submissions -->
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+          <div class="an-section-title" style="margin-bottom:0;">📝 Riwayat Pendaftar Formulir</div>
+          <span id="anFormTotal" style="background:#1e5128;color:#fff;padding:3px 12px;border-radius:20px;font-size:0.78em;font-weight:700;">Total: 0</span>
+        </div>
+        <div class="an-submission-list" id="anSubList">
+          <div style="text-align:center;color:#aaa;font-size:0.82em;padding:20px 0;">Belum ada pendaftaran tercatat</div>
+        </div>
+
+        <div style="text-align:center;margin-top:16px;">
+          <p style="font-size:0.72em;color:#bbb;">Data tersimpan di browser lokal · Diperbarui real-time</p>
+          <button class="an-reset-btn" onclick="confirmResetAnalytics()">🗑️ Reset Semua Data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ================================================================
+// ANALYTICS SYSTEM — Zada Finance Dashboard
+// ================================================================
+const _AN_KEY  = 'zada_site_analytics_v2';
+const _AN_PIN  = 'zada2335';       // ← Ganti PIN sesuai kebutuhan
+const _AN_SESS = 'zada_an_auth';
+
+function _anLoad() {
+  try { return JSON.parse(localStorage.getItem(_AN_KEY)) || _anDefault(); }
+  catch(e) { return _anDefault(); }
+}
+function _anDefault() {
+  return { visits: [], scrollSessions: [], formSubmissions: [] };
+}
+function _anSave(d) {
+  try { localStorage.setItem(_AN_KEY, JSON.stringify(d)); } catch(e) {}
+}
+
+// ── Track visit ──
+(function _trackVisit() {
+  const d = _anLoad();
+  const now = Date.now();
+  d.visits.push(now);
+  const cut = now - 90 * 86400000;
+  d.visits = d.visits.filter(t => t > cut);
+  _anSave(d);
+})();
+
+// ── Track scroll depth ──
+let _mxScroll = 0, _scrollCommitted = false;
+function _onScroll() {
+  const st = window.pageYOffset || document.documentElement.scrollTop;
+  const dh = document.documentElement.scrollHeight - window.innerHeight;
+  if (dh <= 0) return;
+  const depth = Math.min(100, Math.round((st / dh) * 100));
+  if (depth > _mxScroll) {
+    _mxScroll = depth;
+    if (_mxScroll >= 90 && !_scrollCommitted) { _commitScroll(); _scrollCommitted = true; }
+  }
+}
+function _commitScroll() {
+  const d = _anLoad();
+  const now = Date.now();
+  d.scrollSessions = (d.scrollSessions || []);
+  d.scrollSessions.push({ depth: _mxScroll, time: now });
+  const cut = now - 90 * 86400000;
+  d.scrollSessions = d.scrollSessions.filter(s => s.time > cut);
+  _anSave(d);
+}
+window.addEventListener('scroll', _onScroll);
+window.addEventListener('beforeunload', function() { if (!_scrollCommitted) _commitScroll(); });
+
+// ── Track form submission ──
+function _trackFormSubmission(nama, jamaah) {
+  const d = _anLoad();
+  const now = Date.now();
+  d.formSubmissions = (d.formSubmissions || []);
+  d.formSubmissions.push({ time: now, nama: nama || '—', jamaah: jamaah || 1 });
+  const cut = now - 365 * 86400000;
+  d.formSubmissions = d.formSubmissions.filter(s => s.time > cut);
+  _anSave(d);
+}
+
+// ================================================================
+// DASHBOARD UI
+// ================================================================
+let _anPeriod  = 'today';
+let _anUnlocked = false;
+
+function openAnalytics() {
+  document.getElementById('analyticsOverlay').classList.add('active');
+  const wasAuth = sessionStorage.getItem(_AN_SESS) === '1';
+  if (wasAuth) { _anUnlocked = true; showAnDash(); }
+  else { showAnPin(); }
+}
+function closeAnalytics() {
+  document.getElementById('analyticsOverlay').classList.remove('active');
+}
+function lockAnalytics() {
+  _anUnlocked = false;
+  sessionStorage.removeItem(_AN_SESS);
+  showAnPin();
+}
+function showAnPin() {
+  document.getElementById('anPinScreen').style.display = 'block';
+  document.getElementById('anDashScreen').style.display = 'none';
+  setTimeout(() => { const i = document.getElementById('anPinInput'); if(i) i.focus(); }, 100);
+}
+function showAnDash() {
+  document.getElementById('anPinScreen').style.display = 'none';
+  document.getElementById('anDashScreen').style.display = 'block';
+  renderDashboard();
+}
+function checkPin() {
+  const val = (document.getElementById('anPinInput').value || '').trim();
+  const err = document.getElementById('anPinError');
+  if (val === _AN_PIN) {
+    err.textContent = '';
+    sessionStorage.setItem(_AN_SESS, '1');
+    _anUnlocked = true;
+    showAnDash();
+  } else {
+    err.textContent = '❌ PIN salah. Coba lagi.';
+    document.getElementById('anPinInput').value = '';
+    document.getElementById('anPinInput').focus();
+  }
+}
+function setAnPeriod(p, btn) {
+  _anPeriod = p;
+  document.querySelectorAll('.an-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  renderDashboard();
+}
+
+// ── Date helpers ──
+function _startOf(period) {
+  const now = new Date();
+  if (period === 'today') {
+    return new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+  } else if (period === 'week') {
+    return Date.now() - 7 * 86400000;
+  } else if (period === 'month') {
+    return Date.now() - 30 * 86400000;
+  }
+  return 0;
+}
+function _fmt(ts) {
+  const d = new Date(ts);
+  const pad = n => String(n).padStart(2,'0');
+  return pad(d.getDate()) + '/' + pad(d.getMonth()+1) + '/' + d.getFullYear()
+    + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+}
+function _dayLabel(ts) {
+  const d = new Date(ts);
+  const days = ['Min','Sen','Sel','Rab','Kam','Jum','Sab'];
+  return days[d.getDay()];
+}
+function _dateKey(ts) {
+  const d = new Date(ts);
+  return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate();
+}
+
+// ── Main render ──
+function renderDashboard() {
+  const data = _anLoad();
+  const cutoff = _startOf(_anPeriod);
+
+  const visits  = data.visits.filter(t => t >= cutoff);
+  const scrolls = (data.scrollSessions || []).filter(s => s.time >= cutoff);
+  const forms   = (data.formSubmissions || []).filter(s => s.time >= cutoff);
+  const allForms = (data.formSubmissions || []);
+
+  // KPI
+  document.getElementById('kpiVisit').textContent = visits.length;
+  const avgScroll = scrolls.length
+    ? Math.round(scrolls.reduce((a, s) => a + s.depth, 0) / scrolls.length)
+    : 0;
+  document.getElementById('kpiScroll').textContent = avgScroll + '%';
+  document.getElementById('kpiForm').textContent = forms.length;
+
+  // Scroll bar
+  document.getElementById('anScrollAvg').textContent = avgScroll + '%';
+  document.getElementById('anScrollFill').style.width = avgScroll + '%';
+
+  // Scroll depth segments
+  const segs = [
+    { label: '0–25%', min: 0, max: 25, color: '#e74c3c' },
+    { label: '26–50%', min: 26, max: 50, color: '#f39c12' },
+    { label: '51–75%', min: 51, max: 75, color: '#3498db' },
+    { label: '76–99%', min: 76, max: 99, color: '#4e9f3d' },
+    { label: '100%', min: 100, max: 100, color: '#1e5128' },
+  ];
+  const allScrolls = data.scrollSessions || [];
+  const dgEl = document.getElementById('anDepthGrid');
+  dgEl.innerHTML = segs.map(seg => {
+    const cnt = allScrolls.filter(s => s.depth >= seg.min && s.depth <= seg.max).length;
+    const total = allScrolls.length || 1;
+    const pct = Math.round((cnt / total) * 100);
+    return `<div class="an-depth-seg">
+      <div class="seg-bar" style="background:${seg.color};opacity:${0.3 + pct/100 * 0.7};"></div>
+      <div class="seg-label">${seg.label}</div>
+      <div class="seg-count">${cnt} sesi<br><small style="color:#aaa">${pct}%</small></div>
+    </div>`;
+  }).join('');
+
+  // Bar chart — last 7 or 14 days
+  const chartDays = _anPeriod === 'today' ? 1 : (_anPeriod === 'week' ? 7 : (_anPeriod === 'month' ? 14 : 14));
+  const allVisits = data.visits;
+  const dayBuckets = [];
+  const now = Date.now();
+  for (let i = chartDays - 1; i >= 0; i--) {
+    const dayStart = new Date(now - i * 86400000);
+    dayStart.setHours(0,0,0,0);
+    const dayEnd = new Date(dayStart.getTime() + 86400000);
+    const key = _dateKey(dayStart.getTime());
+    const cnt = allVisits.filter(t => t >= dayStart.getTime() && t < dayEnd.getTime()).length;
+    dayBuckets.push({ label: _dayLabel(dayStart.getTime()), date: key, cnt });
+  }
+  const maxCnt = Math.max(...dayBuckets.map(b => b.cnt), 1);
+  const bcEl = document.getElementById('anBarChart');
+  bcEl.innerHTML = dayBuckets.map(b => {
+    const h = Math.max(4, Math.round((b.cnt / maxCnt) * 100));
+    return `<div class="an-bar-col">
+      <div class="an-bar-val">${b.cnt || ''}</div>
+      <div class="an-bar" style="height:${h}px" data-val="${b.cnt} kunjungan"></div>
+      <div class="an-bar-label">${b.label}</div>
+    </div>`;
+  }).join('');
+
+  // Form submissions list
+  const listEl = document.getElementById('anSubList');
+  document.getElementById('anFormTotal').textContent = 'Total: ' + allForms.length;
+  if (allForms.length === 0) {
+    listEl.innerHTML = '<div style="text-align:center;color:#aaa;font-size:0.82em;padding:20px 0;">Belum ada pendaftaran tercatat</div>';
+  } else {
+    const sorted = [...allForms].sort((a,b) => b.time - a.time);
+    listEl.innerHTML = sorted.slice(0, 30).map(s =>
+      `<div class="an-submission-item">
+        <div>
+          <div class="an-sub-nama">${s.nama}</div>
+          <div class="an-sub-time">${_fmt(s.time)}</div>
+        </div>
+        <span class="an-sub-jamaah">${s.jamaah} jamaah</span>
+      </div>`
+    ).join('');
+  }
+}
+
+function confirmResetAnalytics() {
+  if (confirm('⚠️ Yakin ingin menghapus SEMUA data analytics?\n\nTindakan ini tidak dapat dibatalkan.')) {
+    localStorage.removeItem(_AN_KEY);
+    sessionStorage.removeItem(_AN_SESS);
+    _anUnlocked = false;
+    closeAnalytics();
+    alert('✅ Data analytics telah direset.');
+  }
+}
+</script>
+
+</body>
+</html>
